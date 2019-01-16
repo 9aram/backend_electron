@@ -1,0 +1,55 @@
+19/01/11 18:03:40.118 030 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 18:03:40.469 030 W1 <Q> 1:String = %%
+19/01/11 18:03:40.540 030 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 18:03:40.540 030 W1 <Q> 1:String = %%
+19/01/11 18:03:40.540 030 W1 <Q> 2:int = 0
+19/01/11 18:03:40.540 030 W1 <Q> 3:int = 0
+19/01/11 18:03:40.548 030 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 18:03:40.548 030 W1 <Q> 1:int = 0
+19/01/11 18:03:40.549 030 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0
+19/01/11 18:03:40.582 030 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 18:03:40.582 030 W1 <Q> 1:String = %%
+19/01/11 18:03:40.583 030 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 18:03:40.583 030 W1 <Q> 1:String = %%
+19/01/11 18:03:40.583 030 W1 <Q> 2:int = 10
+19/01/11 18:03:40.583 030 W1 <Q> 3:int = 1
+19/01/11 18:03:40.588 030 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 18:03:40.588 030 W1 <Q> 1:int = 0
+19/01/11 18:03:40.588 030 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0
+19/01/11 18:13:15.063 031 W1 <Q> TR:/member/insert_member ID:insertMember
+INSERT INTO member(id, pw)
+VALUES(?, ?)
+19/01/11 18:13:15.490 031 W1 <Q> 1:String = せせ
+19/01/11 18:13:15.490 031 W1 <Q> 2:String = zz
+19/01/11 18:13:15.495 031 W1 <Q> TR:/member/insert_member ID:insertMember updateNum:1
+19/01/11 18:13:19.486 033 W1 <Q> TR:/member/login_confirm ID:loginConfirm
+SELECT id, pw FROM MEMBER WHERE ID = :ID
+19/01/11 18:13:19.486 033 W1 <Q> 1:String = せせ

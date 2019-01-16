@@ -1,0 +1,636 @@
+19/01/16 09:04:43.559 084 W1 <I> <adapter> Java adapter stop
+19/01/16 09:04:43.575 084 W1 <I> <adapter> Mail adapter stop
+19/01/16 09:04:43.575 084 W1 <I> <adapter> Http adapter stop
+19/01/16 09:04:43.575 084 W1 <I> <adapter> DBMS adapter stop
+19/01/16 09:04:43.575 084 W1 <I> <adapter> Http adapter stop
+19/01/16 09:04:43.914 061 W1 <I> <t:MenuMgrBean> Menu DAO class : coreview.menu.dao.XmlMenuDao
+19/01/16 09:04:43.914 061 W1 <I> <t:XmlMenuDao> load menu dir:C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe name:sitemap.xml
+19/01/16 09:04:43.914 061 W1 <I> LOADING MENU ITEM null<t:XmlFileDao> regist [default] /templets/default/templet.jsp
+19/01/16 09:04:43.930 061 W1 <I> <t:XmlFileDao> regist [admin] /templets/admin/templet.jsp
+19/01/16 09:04:43.930 061 W1 <I> <t:XmlFileDao> regist [mobile] /templets/mobile/templet.jsp
+19/01/16 09:04:43.930 061 W1 <I> <t:XmlFileDao> regist [advance] /templets/default/templet.jsp
+19/01/16 09:04:43.930 061 W1 <I> <t:XmlFileDao> regist [no-apply] null
+19/01/16 09:04:43.930 061 W1 <I> <t:XmlFileDao> regist [wts] /WEB-APP/wts/templets/desktop/templet.jsp
+19/01/16 09:04:43.930 061 W1 <I> <t:XmlFileDao> regist [pub] /templets/pub/pcTemplet.jsp
+19/01/16 09:04:43.930 061 W1 <I> <t:XmlFileDao> regist [builder] /WEB-APP/builder/templets/pcUtestTemplet.jsp
+.............................
+19/01/16 09:04:43.044 084 W1 <S> **********************************************************
+19/01/16 09:04:43.051 084 W1 <S> <f:CoreApplication> coreFRAME stopping
+19/01/16 09:04:43.961 061 W1 <I> <t:XmlMenuDao> load menu info sucess. loadtime:47
+19/01/16 09:04:43.883 061 W1 <D> <t:MenuMgrBean> 초기화  documentRoot:C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\
+19/01/16 09:04:43.883 061 W1 <D> <t:MenuMgrBean> 초기화  contextPath:
+19/01/16 09:04:43.883 061 W1 <D> <t:MenuMgrBean> 초기화  isReload:true
+19/01/16 09:04:43.914 061 W1 <W> <t:LayoutManager> getLayoutDao error. coreframe.beans.BeanNotFoundException: coreview.layout.dao beanInfo not found
+19/01/16 09:05:17.205 016 W1 <D> <f:CoreApplication> starting ...........................................  
+19/01/16 09:05:17.217 016 W1 <D> <f:CoreApplication> bean-info xml files
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\base.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\dbms.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\file.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\http.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\java.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\mail.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\soap.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\filter.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\naming.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\security.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\servlet.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\thymeleaf.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\transform.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\web-sitemap.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\event\server-event-listener.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\schedule\schedule.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\apm\performance-pack.xml
+
+19/01/16 09:05:17.313 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\base.xml
+  #coreframe.serviceManager	coreframe.service.ServiceManager true
+  #coreframe.dbPoolService	coreframe.db.DbPoolService true
+  #corelogic.connectionFactory	corelogic.adapter.BaseConnectionFactory true
+  #corelogic.adapterService	corelogic.spi.management.AdapterManagementService true
+19/01/16 09:05:17.319 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\dbms.xml
+  #adapter.dbms	corelogic.adapter.dbms.ResourceAdapterImpl true
+19/01/16 09:05:17.334 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\file.xml
+  #adapter.file	corelogic.adapter.file.ResourceAdapterImpl true
+  #adapter.file2	corelogic.adapter.file.ResourceAdapterImpl true
+  #adapter.file3	corelogic.adapter.file.ResourceAdapterImpl true
+19/01/16 09:05:17.349 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\http.xml
+  #adapter.http	corelogic.adapter.http.HttpResourceAdapter true
+19/01/16 09:05:17.353 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\java.xml
+  #adapter.java	corelogic.adapter.java.ResourceAdapterImtpl true
+19/01/16 09:05:17.359 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\mail.xml
+  #adapter.mail	corelogic.adapter.mail.ResourceAdapterImpl true
+19/01/16 09:05:18.596 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\soap.xml
+  #adapter.soap	corelogic.adapter.http.HttpResourceAdapter true
+19/01/16 09:05:18.596 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\filter.xml
+19/01/16 09:05:18.604 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\naming.xml
+  #coreframe.namingTemplate	coreframe.db.meta.CsvNamingTemplate true
+  #coreframe.bldManager	corelogic.spi.admin.DbmsBldManager true
+19/01/16 09:05:18.618 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\security.xml
+  #coreframe.webSecurityManager	coreframe.security.impl.EsapiSecurityManager true
+  #coreview.defaultWebAuthorizer	coreframe.security.impl.DefaultFrameworkAdminAuthorizer true
+19/01/16 09:05:18.631 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\servlet.xml
+  #corelogic.httpCommandManager	corelogic.servlet.CommandManager true
+  #corelogic.BldExecutorCommand	corelogic.servlet.command.BldExecutorCommand true
+  #corelogic.BldSchemaCommand	corelogic.servlet.command.BldSchemaCommand true
+  #corelogic.codeGenCommand	corelogic.servlet.command.CodeGenCommand true
+19/01/16 09:05:18.643 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\thymeleaf.xml
+  #thymeleaf	coreview.thymeleaf.ThymeleafViewTemplateEngine true
+19/01/16 09:05:18.720 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\transform.xml
+  #transform.xml	corelogic.transform.impl.XmlTransformerImpl false
+  #transform.soap	corelogic.transform.impl.SoapTransformerImpl false
+  #transform.json	corelogic.transform.impl.JSONTransformerImpl false
+  #transform.htm	corelogic.transform.impl.HtmlTransformerImpl false
+  #transform.html	corelogic.transform.impl.HtmlTransformerImpl false
+  #transform.xhtml	corelogic.transform.impl.XhtmlTransformerImpl false
+  #transform.cvs	corelogic.transform.impl.CommaTransformerImpl false
+  #transform.txt	corelogic.transform.impl.TabSplitTextTransformerImpl false
+  #transform.binary	corelogic.transform.impl.BinaryTransformerImpl false
+  #schemaTransform.xml	corelogic.transform.schema.impl.XmlSchemaTransformer true
+  #schemaTransform.xsd	corelogic.transform.schema.impl.XsdSchemaTransformer true
+  #schemaTransform.wsdl	corelogic.transform.schema.impl.WsdlSchemaTransformer true
+  #schemaTransform.json	corelogic.transform.schema.impl.JSONSchemaTransformer true
+  #corelogic.sourceGenerator.jsp	corelogic.transform.sourcecode.impl.JspSourceGenerator true
+  #corelogic.sourceGenerator.jstl	corelogic.transform.sourcecode.impl.JstlSourceGenerator true
+  #corelogic.sourceGenerator.ajax	corelogic.transform.sourcecode.impl.AjaxSourceGenerator true
+19/01/16 09:05:18.834 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\web-sitemap.xml
+  #coreview.layout.dao	coreview.layout.dao.XmlFileDao true
+  #coreview.menuDao	coreview.menu.dao.XmlMenuDao true
+  #coreview.layout.layoutMgr	coreview.layout.LayoutManager true
+  #coreview.menuMgr	coreview.menu.bean.MenuMgrBean true
+  #coreview.WebsiteManagementService	coreview.WebsiteManagementService true
+  #coreview.WebPagePublisher	coreview.menu.WebPagePublisher true
+  #coreview.urlRouteService	coreview.route.impl.RESTfulRouteService true
+  #coreview.ElementManagerService	coreview.layout.element.impl.ElementManagerServiceImpl true
+  #service.less.lessCompileService	coreframe.service.less.LessService true
+19/01/16 09:05:18.841 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\event\server-event-listener.xml
+  #coreframe.eventManager	coreframe.service.event.FrameworkEventManagerImpl true
+  #coreframe.event.webpageAccess	coreframe.service.event.listener.WebpageAccessEventListener true
+19/01/16 09:05:18.844 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\schedule\schedule.xml
+  #corelogic.ScheduleService	corelogic.schedule.ScheduleService true
+19/01/16 09:05:18.926 016 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\apm\performance-pack.xml
+  #coreframe.service.performance	coreframe.service.performance.PerformanceMonitorService true
+  #coreframe.event.listener.chkPerform	coreframe.service.event.listener.PerformanceCheckListener true
+  #coreframe.event.listener.chkPerformBld	coreframe.service.event.listener.BldProcessEventListener true
+  #coreframe.event.processDelay	coreframe.service.event.listener.ProcessDelayEventListener true
+  #coreframe.event.listener.webpageError	coreframe.service.event.listener.WebpageErrorEventListener true
+  #coreframe.event.sessionMonitor	coreframe.service.monitor.WebuserCounter true19/01/16 09:05:17.186 016 W1 <S> <f:CoreApplication> coreFRAME 5.0.266
+19/01/16 09:05:17.204 016 W1 <S> <f:CoreApplication> coreFRAME jar:file:/C:/Users/CP/Desktop/coreframe-web-5.0.14/out/artifacts/unnamed/WEB-INF/lib/coreframe-core-5.0.20.jar!/coreframe/CoreApplication.class
+19/01/16 09:05:17.218 016 W1 <S> * coreFRAME thread pool number:10
+19/01/16 09:05:17.219 016 W1 <S> <f:CoreApplication> beanFactory:coreframe.beans.DefaultBeanFactory
+
+19/01/16 09:05:18.954 016 W1 <D> <f:FrameworkEventManager> scope:cf:webuserWebpageError class:coreframe.service.event.listener.WebpageErrorEventListener
+19/01/16 09:05:19.001 016 W1 <D> <f:FrameworkEventManager> scope:cf:webuserWebpageAccess class:coreframe.service.event.listener.PerformanceCheckListener
+19/01/16 09:05:19.555 016 W1 <D> <f:FrameworkEventManager> scope:cf:corelogicBldProcess class:coreframe.service.event.listener.BldProcessEventListener
+19/01/16 09:05:19.527 016 W1 <I> <l:AdapterManagementService> regist adapter : file-reader-binary
+19/01/16 09:05:19.605 016 W1 <I> <l:AdapterManagementService> regist adapter : soap
+19/01/16 09:05:19.606 016 W1 <I> <f:EsapiSecurityManager> set homeDir [org.owasp.esapi.resources]C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\security
+19/01/16 09:05:19.776 016 W1 <I> <f:EsapiSecurityManager> skipUrlRegExp:/apps/admin
+19/01/16 09:05:19.089 016 W1 <S> <f:ServiceManager> regist service:PerformanceMonitorService
+19/01/16 09:05:19.494 016 W1 <S> <f:ServiceManager> regist service:ScheduleService
+19/01/16 09:05:19.526 016 W1 <S> <f:ServiceManager> regist service:businessLogicService
+19/01/16 09:05:19.782 016 W1 <S> <f:ServiceManager> regist service:LessService
+19/01/16 09:05:19.794 016 W1 <S> <f:ServiceManager> regist service:DbPooling Service
+19/01/16 09:05:19.785 016 W1 <I> <l:AdapterManagementService> regist adapter : http
+19/01/16 09:05:19.789 016 W1 <I> <l:AdapterManagementService> regist adapter : file-reader
+19/01/16 09:05:19.790 016 W1 <I> <l:AdapterManagementService> regist adapter : file-writer
+19/01/16 09:05:19.845 016 W1 <I> corelogic.adapter.dbms.ProcessorFactoryImpl instance create
+19/01/16 09:05:19.845 016 W1 <I> <l:AdapterManagementService> regist adapter : dbms
+19/01/16 09:05:19.804 016 W1 <S> <f:ServiceManager> regist service:ElementManagerServiceImpl
+19/01/16 09:05:19.854 016 W1 <S> <f:ServiceManager> regist service:WebPagePublisher
+19/01/16 09:05:19.861 016 W1 <S> <f:ServiceManager> regist service:WebsiteManagementService
+19/01/16 09:05:19.913 016 W1 <S> <f:ServiceManager> regist service:RESTfulRouteService
+19/01/16 09:05:25.854 016 W1 <S> <f:CoreApplication> supportJTA:false use JdbcTransaction
+19/01/16 09:05:19.559 016 W1 <D> <f:FrameworkEventManager> scope:cf:webuserSessionCreate class:coreframe.service.monitor.WebuserCounter
+19/01/16 09:05:19.559 016 W1 <D> <f:FrameworkEventManager> scope:cf:webuserSessionDestory class:coreframe.service.monitor.WebuserCounter
+19/01/16 09:05:19.567 016 W1 <D> <f:FrameworkEventManager> scope:cf:webuserProcessDelay class:coreframe.service.event.listener.ProcessDelayEventListener
+19/01/16 09:05:19.900 016 W1 <I> <l:AdapterManagementService> regist adapter : java
+19/01/16 09:05:19.925 016 W1 <I> <l:AdapterManagementService> regist adapter : mail
+19/01/16 09:05:25.858 016 W1 <I> <f:ConnectionManager>  use default url:member
+19/01/16 09:05:26.213 016 W1 <I> <f:DbPoolService> connection test OK:member
+19/01/16 09:05:26.219 016 W1 <I> <l:BLContextFactory> check_interval_time:1000
+19/01/16 09:05:26.219 016 W1 <I> <l:BLContextFactory> initLoadBldMode:normal
+19/01/16 09:05:26.219 016 W1 <I> <l:BLContextFactory> load schema root dir : C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\bld
+19/01/16 09:05:26.220 016 W1 <I> <l:AdapterManagementService> adapter start : file-writer
+19/01/16 09:05:26.220 016 W1 <I> <l:AdapterManagementService> adapter start : java
+19/01/16 09:05:26.220 016 W1 <I> <adapter> Java adapter start
+19/01/16 09:05:26.220 016 W1 <I> <l:AdapterManagementService> adapter start : file-reader-binary
+19/01/16 09:05:26.220 016 W1 <I> <l:AdapterManagementService> adapter start : mail
+19/01/16 09:05:26.221 016 W1 <I> <adapter> Mail adapter start
+19/01/16 09:05:26.221 016 W1 <I> <l:AdapterManagementService> adapter start : file-reader
+19/01/16 09:05:26.221 016 W1 <I> <l:AdapterManagementService> adapter start : http
+19/01/16 09:05:26.221 016 W1 <I> <adapter> Http adapter start
+19/01/16 09:05:26.221 016 W1 <I> <l:AdapterManagementService> adapter start : dbms
+19/01/16 09:05:26.221 016 W1 <I> <adapter> DBMS adapter start
+19/01/16 09:05:26.221 016 W1 <I> <l:AdapterManagementService> adapter start : soap
+19/01/16 09:05:26.221 016 W1 <I> <adapter> Http adapter start
+19/01/16 09:05:26.229 016 W1 <I> <t:XmlFileDao> regist [default] /templets/default/templet.jsp
+19/01/16 09:05:26.230 016 W1 <I> <t:XmlFileDao> regist [admin] /templets/admin/templet.jsp
+19/01/16 09:05:26.230 016 W1 <I> <t:XmlFileDao> regist [mobile] /templets/mobile/templet.jsp
+19/01/16 09:05:25.863 016 W1 <D> <f:ConnectionManager> jdbc:oracle:thin:@localhost:1521:xe : oracle.jdbc.driver.OracleDriver
+19/01/16 09:05:26.212 016 W1 <D> <f:ConnectionManager> getConnection [JDBC] jdbc:oracle:thin:@localhost:1521:xe oracle.jdbc.driver.T4CConnection@15f9399c
+19/01/16 09:05:26.234 016 W1 <D> <t:MenuMgrBean> 초기화  documentRoot:C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\
+19/01/16 09:05:26.234 016 W1 <D> <t:MenuMgrBean> 초기화  contextPath:
+19/01/16 09:05:26.230 016 W1 <I> <t:XmlFileDao> regist [advance] /templets/default/templet.jsp
+19/01/16 09:05:26.230 016 W1 <I> <t:XmlFileDao> regist [no-apply] null
+19/01/16 09:05:26.231 016 W1 <I> <t:XmlFileDao> regist [wts] /WEB-APP/wts/templets/desktop/templet.jsp
+19/01/16 09:05:26.231 016 W1 <I> <t:XmlFileDao> regist [pub] /templets/pub/pcTemplet.jsp
+19/01/16 09:05:26.232 016 W1 <I> <t:XmlFileDao> regist [builder] /WEB-APP/builder/templets/pcUtestTemplet.jsp
+19/01/16 09:05:26.236 016 W1 <I> <t:MenuMgrBean> Menu DAO class : coreview.menu.dao.XmlMenuDao
+19/01/16 09:05:26.236 016 W1 <I> <t:XmlMenuDao> load menu dir:C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe name:sitemap.xml
+19/01/16 09:05:26.236 016 W1 <I> LOADING MENU ITEM .............................
+19/01/16 09:05:26.334 016 W1 <I> <t:XmlMenuDao> load menu info sucess. loadtime:98
+19/01/16 09:05:25.854 016 W1 <S> <f:CoreApplication> init - complete
+19/01/16 09:05:26.213 016 W1 <S> <f:ServiceManager> start service:DbPooling Service
+19/01/16 09:05:26.220 016 W1 <S> <l:AdapterManagementService> regist adapter count 8
+19/01/16 09:05:26.221 016 W1 <S> <f:ServiceManager> start service:businessLogicService
+19/01/16 09:05:26.340 016 W1 <S> <f:ServiceManager> start service:WebsiteManagementService
+19/01/16 09:05:26.357 016 W1 <S> <f:ServiceManager> start service:RESTfulRouteService
+19/01/16 09:05:26.235 016 W1 <D> <t:MenuMgrBean> 초기화  isReload:true
+19/01/16 09:05:26.372 016 W1 <D> <v:ElementManagerService> regist element:calendar
+19/01/16 09:05:26.373 016 W1 <D> <v:ElementManagerService> regist element:chart
+19/01/16 09:05:26.374 016 W1 <D> <v:ElementManagerService> regist element:coreframe-client
+19/01/16 09:05:26.375 016 W1 <D> <v:ElementManagerService> regist element:data-bind
+19/01/16 09:05:26.375 016 W1 <D> <v:ElementManagerService> regist element:chart_comm
+19/01/16 09:05:26.376 016 W1 <D> <v:ElementManagerService> regist element:chart
+19/01/16 09:05:26.377 016 W1 <D> <v:ElementManagerService> regist element:grid
+19/01/16 09:05:26.378 016 W1 <D> <v:ElementManagerService> regist element:tab.pc
+19/01/16 09:05:26.378 016 W1 <D> <v:ElementManagerService> regist element:tab.mobile
+19/01/16 09:05:26.378 016 W1 <D> <v:ElementManagerService> regist element:tab.tablet
+19/01/16 09:05:26.379 016 W1 <D> <v:ElementManagerService> regist element:dialog.pc
+19/01/16 09:05:26.379 016 W1 <D> <v:ElementManagerService> regist element:dialog.tablet
+19/01/16 09:05:26.379 016 W1 <D> <v:ElementManagerService> regist element:dialog.mobile
+19/01/16 09:05:26.380 016 W1 <D> <v:ElementManagerService> regist element:websocket.pc
+19/01/16 09:05:26.381 016 W1 <D> <v:ElementManagerService> regist element:websocket.mobile
+19/01/16 09:05:26.382 016 W1 <D> <v:ElementManagerService> regist element:websocket.tablet
+19/01/16 09:05:26.382 016 W1 <D> <v:ElementManagerService> regist element:websocket.tablet-low
+19/01/16 09:05:26.383 016 W1 <D> <v:ElementManagerService> regist element:jquery
+19/01/16 09:05:26.383 016 W1 <D> <v:ElementManagerService> regist element:bootstrap
+19/01/16 09:05:26.384 016 W1 <D> <v:ElementManagerService> regist element:codemirror
+19/01/16 09:05:26.384 016 W1 <D> <v:ElementManagerService> regist element:hammer
+19/01/16 09:05:26.385 016 W1 <D> <v:ElementManagerService> regist element:less
+19/01/16 09:05:26.385 016 W1 <D> <v:ElementManagerService> regist element:underscore
+19/01/16 09:05:26.385 016 W1 <D> <v:ElementManagerService> regist element:getDevice.pc
+19/01/16 09:05:26.386 016 W1 <D> <v:ElementManagerService> regist element:getDevice.mobile
+19/01/16 09:05:26.386 016 W1 <D> <v:ElementManagerService> regist element:getDevice.tablet
+19/01/16 09:05:26.386 016 W1 <D> <v:ElementManagerService> regist element:getDevice.tablet-low
+19/01/16 09:05:26.347 016 W1 <I> <v:RESTfulRouteService> REG C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\web\url-route\admin.xml
+19/01/16 09:05:26.356 016 W1 <I> <v:RESTfulRouteService> REG C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\web\url-route\sample.xml
+19/01/16 09:05:26.386 016 W1 <I> <v:ElementManagerService> load element info
+19/01/16 09:05:26.408 016 W1 <I> * coreFRAME Property Information 
+ * BLD_ROOT_DIRECTORY
+	C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\bld
+ * SERVLET_CONTEXT_EVENT
+	javax.servlet.ServletContextEvent[source=org.apache.catalina.core.ApplicationContextFacade@2aefdb7a]
+ * FRAMEWORK_LOADTIME
+	2019-01-16 09:05:26
+ * WEB_CONTEXT_NAME
+	
+ * class.dynamic.value
+	4
+ * COREFRAME_CONFIG_HOME
+	C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe
+ * target.encoding
+	utf-8
+ * COREFRAME_CONFIG_FILE
+	C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\config.xml
+ * WEB_DOCUMENT_ROOT
+	C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\
+ * domain.name
+	http://yourdomainname.com
+ * WEBAPP_HOME_DIRS
+	[]19/01/16 09:05:26.359 016 W1 <S> <f:ServiceManager> start service:PerformanceMonitorService
+19/01/16 09:05:26.406 016 W1 <S> <f:ServiceManager> start service:ElementManagerServiceImpl
+19/01/16 09:05:26.406 016 W1 <S> <f:ServiceManager> running CoreService :6
+19/01/16 09:05:26.407 016 W1 <S> <f:ServiceManager> running Service(UserService) :3
+19/01/16 09:05:26.407 016 W1 <S> <f:CoreApplication> startService - complete
+19/01/16 09:05:26.409 016 W1 <S> coreFRAME complete startup process. Version:5.0.266
+19/01/16 09:05:26.406 016 W1 <D> <f:FrameworkEventManager> scope:cf:serverStart class:corelogic.schedule.ScheduleService
+19/01/16 09:05:26.409 016 W1 <D> **********************************************************
+19/01/16 09:05:26.409 016 W1 <D> **********************************************************
+19/01/16 09:05:26.556 079 W1 <D> <LessService> LessServiceStart! 1 less files. [encoding : UTF-8] [initCompile : false] [reloadCheckTimeSec : 2][compress : false]
+
+19/01/16 09:05:26.413 016 W1 <I> <t:UIFilter> exclude-dir:/templets
+19/01/16 09:05:26.413 016 W1 <I> <t:UIFilter> Command 구현객체 미지정
+19/01/16 09:05:26.413 016 W1 <I> <t:UIFilter> compactHTML:false
+19/01/16 09:05:26.413 016 W1 <I> <t:UIFilter> layout DAO:coreview.layout.LayoutManager
+19/01/16 09:05:26.467 077 W1 <I> <ScheduleService> crontab file:C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe/service/schedule/crontab.txt
+19/01/16 09:05:26.411 016 W1 <S> <f:FrameworkContextListener> context:  version:5.0.266 Apache Tomcat/8.5.34
+19/01/16 09:05:26.413 016 W1 <S> <t:UIFilter> coreVIEW Filter init.
+19/01/16 09:05:26.413 016 W1 <S> <t:UIFilter> coreVIEW Filter init complete. contextPath:
+19/01/16 09:06:47.714 082 W1 <S> **********************************************************
+19/01/16 09:06:47.715 082 W1 <S> <f:CoreApplication> coreFRAME stopping
+19/01/16 09:06:48.221 082 W1 <I> <adapter> Java adapter stop
+19/01/16 09:06:48.221 082 W1 <I> <adapter> Mail adapter stop
+19/01/16 09:06:48.221 082 W1 <I> <adapter> Http adapter stop
+19/01/16 09:06:48.221 082 W1 <I> <adapter> DBMS adapter stop
+19/01/16 09:06:48.221 082 W1 <I> <adapter> Http adapter stop
+19/01/16 09:05:26.571 079 W1 <D> <LessService> envJsPath   : C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\/WEB-INF/coreframe/service/web/env.rhino.js
+19/01/16 09:05:26.571 079 W1 <D> <LessService> lessJsPath  : C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\/WEB-APP/webponent/thirdParty/less/less-1.3.3.min.js
+19/01/16 09:05:26.603 079 W1 <D> <LessService> C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-APP\webponent\thirdParty\less\library.less
+19/01/16 09:07:28.188 017 W1 <D> <f:CoreApplication> starting ...........................................  
+19/01/16 09:07:28.203 017 W1 <D> <f:CoreApplication> bean-info xml files
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\base.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\dbms.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\file.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\http.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\java.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\mail.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\soap.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\filter.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\naming.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\security.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\servlet.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\thymeleaf.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\transform.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\web-sitemap.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\event\server-event-listener.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\schedule\schedule.xml
+C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\apm\performance-pack.xml
+
+19/01/16 09:07:28.279 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\base.xml
+  #coreframe.serviceManager	coreframe.service.ServiceManager true
+  #coreframe.dbPoolService	coreframe.db.DbPoolService true
+  #corelogic.connectionFactory	corelogic.adapter.BaseConnectionFactory true
+  #corelogic.adapterService	corelogic.spi.management.AdapterManagementService true
+19/01/16 09:07:28.300 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\dbms.xml
+  #adapter.dbms	corelogic.adapter.dbms.ResourceAdapterImpl true
+19/01/16 09:07:28.320 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\file.xml
+  #adapter.file	corelogic.adapter.file.ResourceAdapterImpl true
+  #adapter.file2	corelogic.adapter.file.ResourceAdapterImpl true
+  #adapter.file3	corelogic.adapter.file.ResourceAdapterImpl true
+19/01/16 09:07:28.328 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\http.xml
+  #adapter.http	corelogic.adapter.http.HttpResourceAdapter true
+19/01/16 09:07:28.333 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\java.xml
+  #adapter.java	corelogic.adapter.java.ResourceAdapterImtpl true
+19/01/16 09:07:28.340 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\mail.xml
+  #adapter.mail	corelogic.adapter.mail.ResourceAdapterImpl true
+19/01/16 09:07:28.345 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\adapters\soap.xml
+  #adapter.soap	corelogic.adapter.http.HttpResourceAdapter true
+19/01/16 09:07:28.346 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\filter.xml
+19/01/16 09:07:28.356 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\naming.xml
+  #coreframe.namingTemplate	coreframe.db.meta.CsvNamingTemplate true
+  #coreframe.bldManager	corelogic.spi.admin.DbmsBldManager true
+19/01/16 09:07:28.371 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\security.xml
+  #coreframe.webSecurityManager	coreframe.security.impl.EsapiSecurityManager true
+  #coreview.defaultWebAuthorizer	coreframe.security.impl.DefaultFrameworkAdminAuthorizer true
+19/01/16 09:07:28.395 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\servlet.xml
+  #corelogic.httpCommandManager	corelogic.servlet.CommandManager true
+  #corelogic.BldExecutorCommand	corelogic.servlet.command.BldExecutorCommand true
+  #corelogic.BldSchemaCommand	corelogic.servlet.command.BldSchemaCommand true
+  #corelogic.codeGenCommand	corelogic.servlet.command.CodeGenCommand true
+19/01/16 09:07:28.411 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\thymeleaf.xml
+  #thymeleaf	coreview.thymeleaf.ThymeleafViewTemplateEngine true
+19/01/16 09:07:28.519 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\transform.xml
+  #transform.xml	corelogic.transform.impl.XmlTransformerImpl false
+  #transform.soap	corelogic.transform.impl.SoapTransformerImpl false
+  #transform.json	corelogic.transform.impl.JSONTransformerImpl false
+  #transform.htm	corelogic.transform.impl.HtmlTransformerImpl false
+  #transform.html	corelogic.transform.impl.HtmlTransformerImpl false
+  #transform.xhtml	corelogic.transform.impl.XhtmlTransformerImpl false
+  #transform.cvs	corelogic.transform.impl.CommaTransformerImpl false
+  #transform.txt	corelogic.transform.impl.TabSplitTextTransformerImpl false
+  #transform.binary	corelogic.transform.impl.BinaryTransformerImpl false
+  #schemaTransform.xml	corelogic.transform.schema.impl.XmlSchemaTransformer true
+  #schemaTransform.xsd	corelogic.transform.schema.impl.XsdSchemaTransformer true
+  #schemaTransform.wsdl	corelogic.transform.schema.impl.WsdlSchemaTransformer true
+  #schemaTransform.json	corelogic.transform.schema.impl.JSONSchemaTransformer true
+  #corelogic.sourceGenerator.jsp	corelogic.transform.sourcecode.impl.JspSourceGenerator true
+  #corelogic.sourceGenerator.jstl	corelogic.transform.sourcecode.impl.JstlSourceGenerator true
+  #corelogic.sourceGenerator.ajax	corelogic.transform.sourcecode.impl.AjaxSourceGenerator true
+19/01/16 09:07:28.582 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\web\web-sitemap.xml
+  #coreview.layout.dao	coreview.layout.dao.XmlFileDao true
+  #coreview.menuDao	coreview.menu.dao.XmlMenuDao true
+  #coreview.layout.layoutMgr	coreview.layout.LayoutManager true
+  #coreview.menuMgr	coreview.menu.bean.MenuMgrBean true
+  #coreview.WebsiteManagementService	coreview.WebsiteManagementService true
+  #coreview.WebPagePublisher	coreview.menu.WebPagePublisher true
+  #coreview.urlRouteService	coreview.route.impl.RESTfulRouteService true
+  #coreview.ElementManagerService	coreview.layout.element.impl.ElementManagerServiceImpl true
+  #service.less.lessCompileService	coreframe.service.less.LessService true
+19/01/16 09:07:28.591 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\event\server-event-listener.xml
+  #coreframe.eventManager	coreframe.service.event.FrameworkEventManagerImpl true
+  #coreframe.event.webpageAccess	coreframe.service.event.listener.WebpageAccessEventListener true
+19/01/16 09:07:28.595 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\schedule\schedule.xml
+  #corelogic.ScheduleService	corelogic.schedule.ScheduleService true
+19/01/16 09:07:28.612 017 W1 <D> bean-info filePath: C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\service\apm\performance-pack.xml
+  #coreframe.service.performance	coreframe.service.performance.PerformanceMonitorService true
+  #coreframe.event.listener.chkPerform	coreframe.service.event.listener.PerformanceCheckListener true
+  #coreframe.event.listener.chkPerformBld	coreframe.service.event.listener.BldProcessEventListener true
+  #coreframe.event.processDelay	coreframe.service.event.listener.ProcessDelayEventListener true
+  #coreframe.event.listener.webpageError	coreframe.service.event.listener.WebpageErrorEventListener true
+  #coreframe.event.sessionMonitor	coreframe.service.monitor.WebuserCounter true19/01/16 09:07:28.188 017 W1 <S> <f:CoreApplication> coreFRAME 5.0.266
+19/01/16 09:07:28.188 017 W1 <S> <f:CoreApplication> coreFRAME jar:file:/C:/Users/CP/Desktop/coreframe-web-5.0.14/out/artifacts/unnamed/WEB-INF/lib/coreframe-core-5.0.20.jar!/coreframe/CoreApplication.class
+19/01/16 09:07:28.203 017 W1 <S> * coreFRAME thread pool number:10
+19/01/16 09:07:28.203 017 W1 <S> <f:CoreApplication> beanFactory:coreframe.beans.DefaultBeanFactory
+
+19/01/16 09:07:28.679 017 W1 <D> <f:FrameworkEventManager> scope:cf:webuserWebpageError class:coreframe.service.event.listener.WebpageErrorEventListener
+19/01/16 09:07:28.693 017 W1 <D> <f:FrameworkEventManager> scope:cf:webuserWebpageAccess class:coreframe.service.event.listener.PerformanceCheckListener
+19/01/16 09:07:29.661 017 W1 <D> <f:FrameworkEventManager> scope:cf:corelogicBldProcess class:coreframe.service.event.listener.BldProcessEventListener
+19/01/16 09:07:29.547 017 W1 <I> <l:AdapterManagementService> regist adapter : file-reader-binary
+19/01/16 09:07:29.809 017 W1 <I> <l:AdapterManagementService> regist adapter : soap
+19/01/16 09:07:29.810 017 W1 <I> <f:EsapiSecurityManager> set homeDir [org.owasp.esapi.resources]C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\security
+19/01/16 09:07:30.345 017 W1 <I> <f:EsapiSecurityManager> skipUrlRegExp:/apps/admin
+19/01/16 09:07:28.766 017 W1 <S> <f:ServiceManager> regist service:PerformanceMonitorService
+19/01/16 09:07:29.446 017 W1 <S> <f:ServiceManager> regist service:ScheduleService
+19/01/16 09:07:29.546 017 W1 <S> <f:ServiceManager> regist service:businessLogicService
+19/01/16 09:07:30.351 017 W1 <S> <f:ServiceManager> regist service:LessService
+19/01/16 09:07:30.364 017 W1 <S> <f:ServiceManager> regist service:DbPooling Service
+19/01/16 09:07:30.356 017 W1 <I> <l:AdapterManagementService> regist adapter : http
+19/01/16 09:07:30.357 017 W1 <I> <l:AdapterManagementService> regist adapter : file-reader
+19/01/16 09:07:30.358 017 W1 <I> <l:AdapterManagementService> regist adapter : file-writer
+19/01/16 09:07:30.448 017 W1 <I> corelogic.adapter.dbms.ProcessorFactoryImpl instance create
+19/01/16 09:07:30.455 017 W1 <I> <l:AdapterManagementService> regist adapter : dbms
+19/01/16 09:07:30.373 017 W1 <S> <f:ServiceManager> regist service:ElementManagerServiceImpl
+19/01/16 09:07:30.471 017 W1 <S> <f:ServiceManager> regist service:WebPagePublisher
+19/01/16 09:07:30.482 017 W1 <S> <f:ServiceManager> regist service:WebsiteManagementService
+19/01/16 09:07:30.533 017 W1 <S> <f:ServiceManager> regist service:RESTfulRouteService
+19/01/16 09:07:30.582 017 W1 <S> <f:CoreApplication> supportJTA:false use JdbcTransaction
+19/01/16 09:07:29.665 017 W1 <D> <f:FrameworkEventManager> scope:cf:webuserSessionCreate class:coreframe.service.monitor.WebuserCounter
+19/01/16 09:07:29.666 017 W1 <D> <f:FrameworkEventManager> scope:cf:webuserSessionDestory class:coreframe.service.monitor.WebuserCounter
+19/01/16 09:07:29.677 017 W1 <D> <f:FrameworkEventManager> scope:cf:webuserProcessDelay class:coreframe.service.event.listener.ProcessDelayEventListener
+19/01/16 09:07:30.727 017 W1 <D> <v:ElementManagerService> regist element:calendar
+19/01/16 09:07:30.728 017 W1 <D> <v:ElementManagerService> regist element:chart
+19/01/16 09:07:30.729 017 W1 <D> <v:ElementManagerService> regist element:coreframe-client
+19/01/16 09:07:30.729 017 W1 <D> <v:ElementManagerService> regist element:data-bind
+19/01/16 09:07:30.731 017 W1 <D> <v:ElementManagerService> regist element:chart_comm
+19/01/16 09:07:30.731 017 W1 <D> <v:ElementManagerService> regist element:chart
+19/01/16 09:07:30.737 017 W1 <D> <v:ElementManagerService> regist element:grid
+19/01/16 09:07:30.738 017 W1 <D> <v:ElementManagerService> regist element:tab.pc
+19/01/16 09:07:30.738 017 W1 <D> <v:ElementManagerService> regist element:tab.mobile
+19/01/16 09:07:30.738 017 W1 <D> <v:ElementManagerService> regist element:tab.tablet
+19/01/16 09:07:30.739 017 W1 <D> <v:ElementManagerService> regist element:dialog.pc
+19/01/16 09:07:30.740 017 W1 <D> <v:ElementManagerService> regist element:dialog.tablet
+19/01/16 09:07:30.740 017 W1 <D> <v:ElementManagerService> regist element:dialog.mobile
+19/01/16 09:07:30.741 017 W1 <D> <v:ElementManagerService> regist element:websocket.pc
+19/01/16 09:07:30.741 017 W1 <D> <v:ElementManagerService> regist element:websocket.mobile
+19/01/16 09:07:30.742 017 W1 <D> <v:ElementManagerService> regist element:websocket.tablet
+19/01/16 09:07:30.742 017 W1 <D> <v:ElementManagerService> regist element:websocket.tablet-low
+19/01/16 09:07:30.743 017 W1 <D> <v:ElementManagerService> regist element:jquery
+19/01/16 09:07:30.743 017 W1 <D> <v:ElementManagerService> regist element:bootstrap
+19/01/16 09:07:30.744 017 W1 <D> <v:ElementManagerService> regist element:codemirror
+19/01/16 09:07:30.744 017 W1 <D> <v:ElementManagerService> regist element:hammer
+19/01/16 09:07:30.745 017 W1 <D> <v:ElementManagerService> regist element:less
+19/01/16 09:07:30.746 017 W1 <D> <v:ElementManagerService> regist element:underscore
+19/01/16 09:07:30.503 017 W1 <I> <l:AdapterManagementService> regist adapter : java
+19/01/16 09:07:30.582 017 W1 <I> <l:AdapterManagementService> regist adapter : mail
+19/01/16 09:07:30.627 017 W1 <I> <v:RESTfulRouteService> REG C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\web\url-route\admin.xml
+19/01/16 09:07:30.707 017 W1 <I> <v:RESTfulRouteService> REG C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\web\url-route\sample.xml
+19/01/16 09:07:30.747 017 W1 <D> <v:ElementManagerService> regist element:getDevice.pc
+19/01/16 09:07:30.747 017 W1 <D> <v:ElementManagerService> regist element:getDevice.mobile
+19/01/16 09:07:30.747 017 W1 <D> <v:ElementManagerService> regist element:getDevice.tablet
+19/01/16 09:07:30.748 017 W1 <D> <v:ElementManagerService> regist element:getDevice.tablet-low
+19/01/16 09:07:30.816 017 W1 <D> <f:ConnectionManager> jdbc:oracle:thin:@localhost:1521:xe : oracle.jdbc.driver.OracleDriver
+19/01/16 09:07:30.805 017 W1 <I> <v:ElementManagerService> load element info
+19/01/16 09:07:30.810 017 W1 <I> <f:ConnectionManager>  use default url:member
+19/01/16 09:07:31.716 017 W1 <I> <f:DbPoolService> connection test OK:member
+19/01/16 09:07:31.725 017 W1 <I> <l:BLContextFactory> check_interval_time:1000
+19/01/16 09:07:31.726 017 W1 <I> <l:BLContextFactory> initLoadBldMode:normal
+19/01/16 09:07:30.583 017 W1 <S> <f:CoreApplication> init - complete
+19/01/16 09:07:30.711 017 W1 <S> <f:ServiceManager> start service:RESTfulRouteService
+19/01/16 09:07:30.807 017 W1 <S> <f:ServiceManager> start service:ElementManagerServiceImpl
+19/01/16 09:07:31.716 017 W1 <S> <f:ServiceManager> start service:DbPooling Service
+19/01/16 09:07:31.718 017 W1 <S> <f:ServiceManager> start service:PerformanceMonitorService
+19/01/16 09:07:31.726 017 W1 <S> <l:AdapterManagementService> regist adapter count 819/01/16 09:07:31.726 017 W1 <I> <l:BLContextFactory> load schema root dir : C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\bld
+19/01/16 09:07:31.726 017 W1 <I> <l:AdapterManagementService> adapter start : file-writer
+19/01/16 09:07:31.727 017 W1 <I> <l:AdapterManagementService> adapter start : java
+19/01/16 09:07:31.727 017 W1 <I> <adapter> Java adapter start
+19/01/16 09:07:31.727 017 W1 <I> <l:AdapterManagementService> adapter start : file-reader-binary
+19/01/16 09:07:31.727 017 W1 <I> <l:AdapterManagementService> adapter start : mail
+19/01/16 09:07:31.727 017 W1 <I> <adapter> Mail adapter start
+19/01/16 09:07:31.727 017 W1 <I> <l:AdapterManagementService> adapter start : file-reader
+19/01/16 09:07:31.727 017 W1 <I> <l:AdapterManagementService> adapter start : http
+19/01/16 09:07:31.729 017 W1 <I> <adapter> Http adapter start
+19/01/16 09:07:31.729 017 W1 <I> <l:AdapterManagementService> adapter start : dbms
+19/01/16 09:07:31.729 017 W1 <I> <adapter> DBMS adapter start
+19/01/16 09:07:31.729 017 W1 <I> <l:AdapterManagementService> adapter start : soap
+19/01/16 09:07:31.729 017 W1 <I> <adapter> Http adapter start
+19/01/16 09:07:31.733 017 W1 <I> <t:XmlFileDao> regist [default] /templets/default/templet.jsp
+19/01/16 09:07:31.734 017 W1 <I> <t:XmlFileDao> regist [admin] /templets/admin/templet.jsp
+19/01/16 09:07:31.735 017 W1 <I> <t:XmlFileDao> regist [mobile] /templets/mobile/templet.jsp
+19/01/16 09:07:31.735 017 W1 <I> <t:XmlFileDao> regist [advance] /templets/default/templet.jsp
+19/01/16 09:07:31.735 017 W1 <I> <t:XmlFileDao> regist [no-apply] null
+19/01/16 09:07:31.737 017 W1 <I> <t:XmlFileDao> regist [wts] /WEB-APP/wts/templets/desktop/templet.jsp
+19/01/16 09:07:31.737 017 W1 <I> <t:XmlFileDao> regist [pub] /templets/pub/pcTemplet.jsp
+19/01/16 09:07:31.738 017 W1 <I> <t:XmlFileDao> regist [builder] /WEB-APP/builder/templets/pcUtestTemplet.jsp
+19/01/16 09:07:31.715 017 W1 <D> <f:ConnectionManager> getConnection [JDBC] jdbc:oracle:thin:@localhost:1521:xe oracle.jdbc.driver.T4CConnection@3654c9c2
+19/01/16 09:07:31.742 017 W1 <D> <t:MenuMgrBean> 초기화  documentRoot:C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\
+19/01/16 09:07:31.742 017 W1 <D> <t:MenuMgrBean> 초기화  contextPath:
+19/01/16 09:07:31.742 017 W1 <D> <t:MenuMgrBean> 초기화  isReload:true
+19/01/16 09:07:31.743 017 W1 <I> <t:MenuMgrBean> Menu DAO class : coreview.menu.dao.XmlMenuDao
+19/01/16 09:07:31.743 017 W1 <I> <t:XmlMenuDao> load menu dir:C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe name:sitemap.xml
+19/01/16 09:07:31.743 017 W1 <I> LOADING MENU ITEM .............................
+19/01/16 09:07:31.857 017 W1 <I> <t:XmlMenuDao> load menu info sucess. loadtime:114
+19/01/16 09:07:32.025 017 W1 <I> * coreFRAME Property Information 
+ * BLD_ROOT_DIRECTORY
+	C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\bld
+ * SERVLET_CONTEXT_EVENT
+	javax.servlet.ServletContextEvent[source=org.apache.catalina.core.ApplicationContextFacade@4210130c]
+ * FRAMEWORK_LOADTIME
+	2019-01-16 09:07:32
+ * WEB_CONTEXT_NAME
+	
+ * class.dynamic.value
+	4
+ * COREFRAME_CONFIG_HOME
+	C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe
+ * target.encoding
+	utf-8
+ * COREFRAME_CONFIG_FILE
+	C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-INF\coreframe\config.xml
+ * WEB_DOCUMENT_ROOT
+	C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\
+ * domain.name
+	http://yourdomainname.com
+ * WEBAPP_HOME_DIRS
+	[]
+19/01/16 09:07:31.729 017 W1 <S> <f:ServiceManager> start service:businessLogicService
+19/01/16 09:07:31.861 017 W1 <S> <f:ServiceManager> start service:WebsiteManagementService
+19/01/16 09:07:31.861 017 W1 <S> <f:ServiceManager> running CoreService :6
+19/01/16 09:07:31.861 017 W1 <S> <f:ServiceManager> running Service(UserService) :3
+19/01/16 09:07:32.024 017 W1 <S> <f:CoreApplication> startService - complete
+19/01/16 09:07:32.025 017 W1 <S> coreFRAME complete startup process. Version:5.0.266
+19/01/16 09:07:31.861 017 W1 <D> <f:FrameworkEventManager> scope:cf:serverStart class:coreframe.service.less.LessService
+19/01/16 09:07:32.025 017 W1 <D> **********************************************************
+19/01/16 09:07:32.025 017 W1 <D> **********************************************************
+19/01/16 09:07:32.192 077 W1 <D> <LessService> LessServiceStart! 1 less files. [encoding : UTF-8] [initCompile : false] [reloadCheckTimeSec : 2][compress : false]
+19/01/16 09:07:32.194 077 W1 <D> <LessService> envJsPath   : C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\/WEB-INF/coreframe/service/web/env.rhino.js
+19/01/16 09:07:32.194 077 W1 <D> <LessService> lessJsPath  : C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\/WEB-APP/webponent/thirdParty/less/less-1.3.3.min.js
+19/01/16 09:07:32.386 077 W1 <D> <LessService> C:\Users\CP\Desktop\coreframe-web-5.0.14\out\artifacts\unnamed\WEB-APP\webponent\thirdParty\less\library.less
+19/01/16 09:41:08.673 034 W1 <D> <f:JspController> process cmd:insertMember
+19/01/16 09:41:08.698 034 W1 <D> <f:LocalInteraction> execute /member/insert_member
+19/01/16 09:41:08.795 034 W1 <D> <f:BusinessLogicContextProcess> LOAD:/member/insert_member
+19/01/16 09:41:08.820 034 W1 <D> <f:ConnectionManager> jdbc:oracle:thin:@localhost:1521:xe : oracle.jdbc.driver.OracleDriver
+19/01/16 09:41:08.862 034 W1 <D> <f:ConnectionManager> getConnection [JDBC] jdbc:oracle:thin:@localhost:1521:xe oracle.jdbc.driver.T4CConnection@5e97f56c
+19/01/16 09:41:14.004 026 W1 <D> <f:JspController> process cmd:insertMember
+19/01/16 09:41:14.006 026 W1 <D> <f:LocalInteraction> execute /member/insert_member
+19/01/16 09:41:14.006 026 W1 <D> <f:ConnectionManager> jdbc:oracle:thin:@localhost:1521:xe : oracle.jdbc.driver.OracleDriver
+19/01/16 09:41:14.455 026 W1 <E> <f:LocalInteraction> interact err [/member/insert_member]
+coreframe.data.ResourceException: /member/insert_member SQLException:ORA-00001: unique constraint (SCOTT.SYS_C006997) violated
+; nested exception is: 
+	java.sql.SQLException: ORA-00001: unique constraint (SCOTT.SYS_C006997) violated
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.login_005fcontroller_jspx.insertMember(login_005fcontroller_jspx.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: ORA-00001: unique constraint (SCOTT.SYS_C006997) violated
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:754)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:219)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:972)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1192)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3415)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3499)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1171)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_member_insert_member.execute(C_member_insert_member.java:17)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+19/01/16 09:41:14.671 026 W1 <E> <t:UIFilter> IOException:/curriculum1.4/login_controller.jspx
+java.io.IOException: coreframe.data.ResourceException: /member/insert_member SQLException:ORA-00001: unique constraint (SCOTT.SYS_C006997) violated
+; nested exception is: 
+	java.sql.SQLException: ORA-00001: unique constraint (SCOTT.SYS_C006997) violated
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: coreframe.data.ResourceException: /member/insert_member SQLException:ORA-00001: unique constraint (SCOTT.SYS_C006997) violated
+; nested exception is: 
+	java.sql.SQLException: ORA-00001: unique constraint (SCOTT.SYS_C006997) violated
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.login_005fcontroller_jspx.insertMember(login_005fcontroller_jspx.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: ORA-00001: unique constraint (SCOTT.SYS_C006997) violated
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:754)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:219)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:972)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1192)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3415)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3499)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1171)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_member_insert_member.execute(C_member_insert_member.java:17)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more

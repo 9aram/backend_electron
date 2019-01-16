@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<transaction name="insert_member">
+
+    <processor-info type="dbms" datasource="member">
+        <transaction-type></transaction-type>
+        <script language="java">
+            <![CDATA[
+				String sqlID = input.getText("sqlID");
+				System.out.println("진입");
+				System.out.println(sqlID);
+				if(sqlID.equals("loginConfirm")){
+					executeSQL(sqlID, connection, input, output);
+				}
+
+			]]>
+        </script>
+        <sql id='loginConfirm'>
+            <query>
+                <![CDATA[
+					SELECT id, pw FROM MEMBER WHERE ID = :ID
+				]]>
+            </query>
+            <mapping>
+                <setProperty>id</setProperty>
+                <getProperty>id, pw</getProperty>
+            </mapping>
+        </sql>
+
+    </processor-info>
+
+    <input>
+        <block>
+            <field name="id"		type="string"	label="id" />
+        </block>
+    </input>
+
+    <output>
+        <block>
+            <field name="id" type="string" label="id" />
+            <field name="pw" type="string" label="passward" />
+        </block>
+    </output>
+
+</transaction>

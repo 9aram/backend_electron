@@ -1,0 +1,208 @@
+19/01/11 10:50:42.769 029 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 10:50:43.257 029 W1 <Q> 1:String = %%
+19/01/11 10:50:43.327 029 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 10:50:43.327 029 W1 <Q> 1:String = %%
+19/01/11 10:50:43.327 029 W1 <Q> 2:int = 0
+19/01/11 10:50:43.327 029 W1 <Q> 3:int = 0
+19/01/11 10:50:43.358 029 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:50:43.358 029 W1 <Q> 1:int = 0
+19/01/11 10:50:43.360 029 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0
+19/01/11 10:50:43.398 029 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 10:50:43.398 029 W1 <Q> 1:String = %%
+19/01/11 10:50:43.400 029 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 10:50:43.400 029 W1 <Q> 1:String = %%
+19/01/11 10:50:43.400 029 W1 <Q> 2:int = 10
+19/01/11 10:50:43.400 029 W1 <Q> 3:int = 1
+19/01/11 10:50:43.403 029 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:50:43.403 029 W1 <Q> 1:int = 0
+19/01/11 10:50:43.403 029 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0
+19/01/11 10:50:55.901 032 W1 <Q> TR:/main_board/select_board ID:getBoardData
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent, bFile from mvc_board
+WHERE bId = ?
+19/01/11 10:50:55.901 032 W1 <Q> 1:int = 263
+19/01/11 10:50:55.904 032 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:50:55.904 032 W1 <Q> 1:int = 263
+19/01/11 10:50:55.910 032 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:1
+19/01/11 10:50:57.991 034 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 10:50:57.991 034 W1 <Q> 1:String = %%
+19/01/11 10:50:57.993 034 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 10:50:57.993 034 W1 <Q> 1:String = %%
+19/01/11 10:50:57.993 034 W1 <Q> 2:int = 0
+19/01/11 10:50:57.993 034 W1 <Q> 3:int = 0
+19/01/11 10:50:57.994 034 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:50:57.994 034 W1 <Q> 1:int = 0
+19/01/11 10:50:57.995 034 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0
+19/01/11 10:50:58.044 034 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 10:50:58.044 034 W1 <Q> 1:String = %%
+19/01/11 10:50:58.045 034 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 10:50:58.045 034 W1 <Q> 1:String = %%
+19/01/11 10:50:58.045 034 W1 <Q> 2:int = 10
+19/01/11 10:50:58.045 034 W1 <Q> 3:int = 1
+19/01/11 10:50:58.047 034 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:50:58.048 034 W1 <Q> 1:int = 0
+19/01/11 10:50:58.048 034 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0
+19/01/11 10:50:59.011 033 W1 <Q> TR:/main_board/select_board ID:getBoardData
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent, bFile from mvc_board
+WHERE bId = ?
+19/01/11 10:50:59.012 033 W1 <Q> 1:int = 261
+19/01/11 10:50:59.013 033 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:50:59.013 033 W1 <Q> 1:int = 261
+19/01/11 10:50:59.014 033 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:1
+19/01/11 10:51:00.116 035 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 10:51:00.116 035 W1 <Q> 1:String = %%
+19/01/11 10:51:00.117 035 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 10:51:00.117 035 W1 <Q> 1:String = %%
+19/01/11 10:51:00.117 035 W1 <Q> 2:int = 0
+19/01/11 10:51:00.117 035 W1 <Q> 3:int = 0
+19/01/11 10:51:00.118 035 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:51:00.118 035 W1 <Q> 1:int = 0
+19/01/11 10:51:00.118 035 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0
+19/01/11 10:51:00.156 035 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 10:51:00.156 035 W1 <Q> 1:String = %%
+19/01/11 10:51:00.157 035 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 10:51:00.157 035 W1 <Q> 1:String = %%
+19/01/11 10:51:00.157 035 W1 <Q> 2:int = 10
+19/01/11 10:51:00.157 035 W1 <Q> 3:int = 1
+19/01/11 10:51:00.159 035 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:51:00.159 035 W1 <Q> 1:int = 0
+19/01/11 10:51:00.160 035 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0
+19/01/11 10:51:01.315 026 W1 <Q> TR:/main_board/select_board ID:getBoardData
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent, bFile from mvc_board
+WHERE bId = ?
+19/01/11 10:51:01.315 026 W1 <Q> 1:int = 253
+19/01/11 10:51:01.316 026 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:51:01.316 026 W1 <Q> 1:int = 253
+19/01/11 10:51:01.317 026 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:1
+19/01/11 10:51:02.500 028 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 10:51:02.500 028 W1 <Q> 1:String = %%
+19/01/11 10:51:02.502 028 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 10:51:02.502 028 W1 <Q> 1:String = %%
+19/01/11 10:51:02.502 028 W1 <Q> 2:int = 0
+19/01/11 10:51:02.502 028 W1 <Q> 3:int = 0
+19/01/11 10:51:02.503 028 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:51:02.503 028 W1 <Q> 1:int = 0
+19/01/11 10:51:02.506 028 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0
+19/01/11 10:51:02.567 028 W1 <Q> TR:/main_board/select_board ID:getBoardCount
+SELECT count(*) as totalCount
+FROM mvc_board
+WHERE bTitle LIKE ?
+19/01/11 10:51:02.567 028 W1 <Q> 1:String = %%
+19/01/11 10:51:02.568 028 W1 <Q> TR:/main_board/select_board ID:getBoardList
+SELECT
+X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+FROM (
+SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+FROM (
+SELECT	* FROM mvc_board
+WHERE bTitle LIKE ?
+ORDER BY  bGroup DESC, bStep asc) A
+WHERE ROWNUM < ? +1) X
+WHERE X.rown >= ?
+19/01/11 10:51:02.568 028 W1 <Q> 1:String = %%
+19/01/11 10:51:02.568 028 W1 <Q> 2:int = 10
+19/01/11 10:51:02.568 028 W1 <Q> 3:int = 1
+19/01/11 10:51:02.571 028 W1 <Q> TR:/main_board/select_board ID:upHit
+update mvc_board set bHit = bHit + 1 where bId =?
+19/01/11 10:51:02.571 028 W1 <Q> 1:int = 0
+19/01/11 10:51:02.572 028 W1 <Q> TR:/main_board/select_board ID:upHit updateNum:0

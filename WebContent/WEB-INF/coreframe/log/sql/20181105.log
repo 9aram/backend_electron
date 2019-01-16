@@ -1,0 +1,60 @@
+18/11/05 10:17:30.574 107 W1 <Q> TR:samples/database/listCities ID:query1
+SELECT CITY_ID, CITY_NAME, COUNTRY, AIRPORT, LANGUAGE, COUNTRY_ISO_CODE FROM CITIES where CITY_NAME like '%'
+18/11/05 10:17:41.006 105 W1 <Q> TR:samples/database/deleteCity ID:query1
+DELETE FROM CITIES WHERE city_id=?
+18/11/05 10:17:41.330 105 W1 <Q> 1:int = 2
+18/11/05 10:17:41.375 105 W1 <Q> TR:samples/database/deleteCity ID:query1 updateNum:1
+18/11/05 10:17:41.377 105 W1 <Q> TR:samples/database/listCities ID:query1
+SELECT CITY_ID, CITY_NAME, COUNTRY, AIRPORT, LANGUAGE, COUNTRY_ISO_CODE FROM CITIES where CITY_NAME like '%'
+18/11/05 10:17:54.692 107 W1 <Q> TR:samples/database/readCity ID:query1
+SELECT CITY_ID, CITY_NAME, COUNTRY, AIRPORT, LANGUAGE, COUNTRY_ISO_CODE
+FROM CITIES WHERE city_id=?
+18/11/05 10:17:54.700 107 W1 <Q> 1:int = 1
+18/11/05 18:35:41.435 040 W1 <Q> TR:/main_board/select_board ID:getBoardList
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent
+from mvc_board
+18/11/05 18:35:41.932 040 W1 <Q> TR:/main_board/select_board ID:getBoardList
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent
+from mvc_board
+18/11/05 18:36:36.552 046 W1 <Q> TR:/main_board/select_board ID:getBoardList
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent
+from mvc_board
+18/11/05 18:36:36.656 046 W1 <Q> TR:/main_board/select_board ID:getBoardList
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent
+from mvc_board
+18/11/05 18:38:10.793 047 W1 <Q> TR:/main_board/select_board ID:getBoardList
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent
+from mvc_board
+18/11/05 18:38:10.868 047 W1 <Q> TR:/main_board/select_board ID:getBoardList
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent
+from mvc_board
+18/11/05 18:50:50.868 042 W1 <Q> TR:/main_board/select_board ID:getBoardList
+select rn, bId, bName, bTitle,
+bContent, bDate, bHit, bGroup, bStep, bIndent
+from (
+select b.*, row_number() over (order by bGroup DESC, bStep asc) rn
+from mvc_board b %s "
+)
+where rn between ? and ?
+order by rn;
+18/11/05 18:50:50.919 042 W1 <Q> TR:/main_board/select_board ID:getBoardList SQL ERROR:911
+18/11/05 18:51:00.944 040 W1 <Q> TR:/main_board/select_board ID:getBoardList
+select rn, bId, bName, bTitle,
+bContent, bDate, bHit, bGroup, bStep, bIndent
+from (
+select b.*, row_number() over (order by bGroup DESC, bStep asc) rn
+from mvc_board b %s "
+)
+where rn between ? and ?
+order by rn;
+18/11/05 18:51:00.945 040 W1 <Q> TR:/main_board/select_board ID:getBoardList SQL ERROR:911
+18/11/05 18:51:33.245 045 W1 <Q> TR:/main_board/select_board ID:getBoardList
+select rn, bId, bName, bTitle,
+bContent, bDate, bHit, bGroup, bStep, bIndent
+from (
+select b.*, row_number() over (order by bGroup DESC, bStep asc) rn
+from mvc_board b %s "
+)
+where rn between ? and ?
+order by rn;
+18/11/05 18:51:33.246 045 W1 <Q> TR:/main_board/select_board ID:getBoardList SQL ERROR:911

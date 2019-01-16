@@ -1,0 +1,248 @@
+19/01/11 18:03:42.299 064 W1 <M> 30 coreview.layout.filter.UIFilter (/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 45
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardCount) 423
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 8
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 485
+2 coreframe.db.ConnectionManager (mvc_board) 30
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardCount) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 5
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 37
+0 coreview.layout.filter.UIFilter (/curriculum1.4/controller.jspx) 7783
+19/01/11 18:08:37.335 064 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+org.apache.jasper.JasperException: org.apache.jasper.JasperException: Unable to compile class for JSP
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:579)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.jasper.JasperException: Unable to compile class for JSP
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:610)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:382)
+	... 28 more
+Caused by: java.lang.IllegalArgumentException: Negative time
+	at java.io.File.setLastModified(File.java:1427)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:376)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:350)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:595)
+	... 29 more
+
+19/01/11 18:08:40.642 067 W1 <M> 29 coreview.layout.filter.UIFilter (/curriculum1.4/signUpForm.jsp)
+0 coreview.layout.filter.UIFilter (/curriculum1.4/signUpForm.jsp) 1984
+19/01/11 18:09:51.198 063 W1 <M> 28 coreview.layout.filter.UIFilter (/curriculum1.4/login_controller.jspx?cmd=loginConfirm)
+2 coreframe.db.ConnectionManager (member) 0
+1 corelogic.adapter.LocalInteraction (dbms /member/login_confirm) 1
+0 coreview.layout.filter.UIFilter (/curriculum1.4/login_controller.jspx?cmd=loginConfirm) 2910
+19/01/11 18:09:51.214 066 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: SQLException:member jdbcDriver is not defined; nested exception is: 
+	java.sql.SQLException: member jdbcDriver is not defined
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: coreframe.data.ResourceException: SQLException:member jdbcDriver is not defined; nested exception is: 
+	java.sql.SQLException: member jdbcDriver is not defined
+	at corelogic.adapter.dbms.ConnectionFactoryImpl.getConnection(ConnectionFactoryImpl.java:59)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:269)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.login_005fcontroller_jspx.loginConfirm(login_005fcontroller_jspx.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: member jdbcDriver is not defined
+	at coreframe.db.ConnectionManager.getConnection(ConnectionManager.java:460)
+	at coreframe.db.ConnectionManager.getConnection(ConnectionManager.java:224)
+	at corelogic.adapter.dbms.ConnectionFactoryImpl.getConnection(ConnectionFactoryImpl.java:55)
+	... 39 more
+
+19/01/11 18:11:22.913 065 W1 <M> 29 coreview.layout.filter.UIFilter (/curriculum1.4/loginForm.jsp)
+0 coreview.layout.filter.UIFilter (/curriculum1.4/loginForm.jsp) 1717
+19/01/11 18:11:38.023 067 W1 <M> 33 coreview.layout.filter.UIFilter (/curriculum1.4/login_controller.jspx?cmd=insertMember)
+2 coreframe.db.ConnectionManager (member) 0
+1 corelogic.adapter.LocalInteraction (dbms /member/insert_member) 7
+0 coreview.layout.filter.UIFilter (/curriculum1.4/login_controller.jspx?cmd=insertMember) 3864
+19/01/11 18:11:38.053 063 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: SQLException:member jdbcDriver is not defined; nested exception is: 
+	java.sql.SQLException: member jdbcDriver is not defined
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: coreframe.data.ResourceException: SQLException:member jdbcDriver is not defined; nested exception is: 
+	java.sql.SQLException: member jdbcDriver is not defined
+	at corelogic.adapter.dbms.ConnectionFactoryImpl.getConnection(ConnectionFactoryImpl.java:59)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:269)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.login_005fcontroller_jspx.insertMember(login_005fcontroller_jspx.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: member jdbcDriver is not defined
+	at coreframe.db.ConnectionManager.getConnection(ConnectionManager.java:460)
+	at coreframe.db.ConnectionManager.getConnection(ConnectionManager.java:224)
+	at corelogic.adapter.dbms.ConnectionFactoryImpl.getConnection(ConnectionFactoryImpl.java:55)
+	... 39 more
+
+19/01/11 18:12:20.216 060 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: SQLException:member jdbcDriver is not defined; nested exception is: 
+	java.sql.SQLException: member jdbcDriver is not defined
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: coreframe.data.ResourceException: SQLException:member jdbcDriver is not defined; nested exception is: 
+	java.sql.SQLException: member jdbcDriver is not defined
+	at corelogic.adapter.dbms.ConnectionFactoryImpl.getConnection(ConnectionFactoryImpl.java:59)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:269)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.login_005fcontroller_jspx.insertMember(login_005fcontroller_jspx.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: member jdbcDriver is not defined
+	at coreframe.db.ConnectionManager.getConnection(ConnectionManager.java:460)
+	at coreframe.db.ConnectionManager.getConnection(ConnectionManager.java:224)
+	at corelogic.adapter.dbms.ConnectionFactoryImpl.getConnection(ConnectionFactoryImpl.java:55)
+	... 39 more
+
+19/01/11 18:13:05.573 059 W1 <M> 27 coreview.layout.filter.UIFilter (/curriculum1.4/loginForm.jsp)
+0 coreview.layout.filter.UIFilter (/curriculum1.4/loginForm.jsp) 1501
+19/01/11 18:13:10.215 062 W1 <M> 30 coreview.layout.filter.UIFilter (/curriculum1.4/signUpForm.jsp)
+0 coreview.layout.filter.UIFilter (/curriculum1.4/signUpForm.jsp) 1252
+19/01/11 18:13:15.501 063 W1 <M> 31 coreview.layout.filter.UIFilter (/curriculum1.4/login_controller.jspx?cmd=insertMember)
+2 coreframe.db.ConnectionManager (member) 44
+2 corelogic.spi.process.QueryOperator (TR:/member/insert_member ID:insertMember) 432
+1 corelogic.adapter.LocalInteraction (dbms /member/insert_member) 517
+0 coreview.layout.filter.UIFilter (/curriculum1.4/login_controller.jspx?cmd=insertMember) 2196

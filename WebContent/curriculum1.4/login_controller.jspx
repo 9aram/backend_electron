@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+		  xmlns:c="http://java.sun.com/jsp/jstl/core" version="2.0">
+<jsp:directive.page contentType="text/html; charset=UTF-8"
+					pageEncoding="UTF-8" />
+<jsp:directive.page extends="coreframe.http.JspxController" />
+<jsp:directive.page import="java.io.*,java.util.*" />
+<jsp:directive.page import="java.lang.*" />
+
+
+
+<jsp:directive.page
+		import="coreframe.http.*,coreframe.data.*,coreframe.http.multipart.*" />
+<jsp:directive.page import="coreframe.service.validation.*" />
+<jsp:directive.page import="java.io.File" />
+<jsp:directive.page import="java.io.PrintWriter" />
+
+<jsp:directive.page import="com.oreilly.servlet.MultipartRequest" />
+<jsp:directive.page
+		import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" />
+
+
+<c:set scope="request" var="viewpage.prefix" value="/curriculum1.4/" />
+<c:set scope="request" var="viewpage.postfix" value=".jsp" />
+
+<jsp:declaration><![CDATA[String bldPath = "/member/";
+
+	protected String getDefaultMethodName() {
+		return "insertMember";
+	}
+
+	//회원 추가
+	public void insertMember(ViewMeta view) throws IOException {
+
+		//HttpServletRequest의 각 paramter 키/값을 DataSet 형태로 변환하여 반환한다.
+		DataSet input = view.getInputDataSet();
+
+		InteractionBean interact = new InteractionBean();
+
+		String id = input.getText("id").trim();
+		String pw = input.getText("pw").trim();
+		input.put("id", id);
+		input.put("pw", pw);
+		input.put("sqlID", "insertMember");
+
+		DataSet output = interact.execute(bldPath + "insert_member", input);
+
+		//view.setAttribute("id", id);
+
+		view.setRedirectUrl("loginForm.jsp");
+	}
+
+	//로그인 확인
+	public void loginConfirm(ViewMeta view) throws IOException {
+
+		System.out.println("컨트롤러에서 modifyContents 진입");
+		DataSet input = view.getInputDataSet();
+		InteractionBean interact = new InteractionBean();
+
+		String id = input.getText("id").trim();
+		String pw = input.getText("pw").trim();
+
+		input.put("id", id);
+
+		input.put("sqlID", "loginConfirm");
+		System.out.println(id+"출력완료");
+		DataSet output = interact.execute(bldPath + "login_confirm", input);
+		System.out.println(output.get("id"));//여기까지 출력완료
+
+		String savedId= output.getText("id");
+		String savedPw= output.getText("pw");
+		System.out.println("가져온 아이디는"+output.get("id")); //여기까지 출력완료
+		System.out.println("가져온 비밀번호는"+output.get("id")); //여기까지 출력완료
+
+		if(savedId!=null){
+			if(savedId.equals(id)){
+				if(savedPw.equals(pw)){
+					//view.setAttribute("id", id);
+					view.setAttribute("id", id);
+					view.setViewName("downloadPage");
+				}else{
+					view.setRedirectUrl("loginForm.jsp");
+				}
+			}
+		}
+		view.setAttribute("id", id);
+		view.setViewName("downloadPage");
+	}
+
+
+	]]>
+	</jsp:declaration>
+</jsp:root>

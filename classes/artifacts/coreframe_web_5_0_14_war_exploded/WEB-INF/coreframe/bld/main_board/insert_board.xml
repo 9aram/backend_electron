@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<transaction name="select_board">
+
+	<processor-info type="dbms" datasource="mvc_board">
+		<transaction-type></transaction-type>
+		
+		<script language="java">
+			<![CDATA[				
+				executeSQL("addBoardData", connection, input, output);
+				
+			]]>
+		</script>		
+		<sql id='addBoardData'>
+			<query>
+				<![CDATA[
+					
+					INSERT INTO mvc_board(bId, bTitle, bName, bContent, bHit, bGroup, bStep, bIndent, bFile)
+					
+					VALUES(mvc_board_seq.nextval, :bTitle, :bName, :bContent, 0, mvc_board_seq.currval, 0, 0, :bFile)
+					
+				]]>
+			</query>
+			<mapping>				
+				<setProperty></setProperty>							
+				<getProperty></getProperty>
+			</mapping>
+		</sql>
+	
+	</processor-info>
+
+	<input>
+		<block>			
+			<field name="bTitle"		type="string"	label="제목" />
+			<field name="bName"		type="string"	label="이름" />
+			<field name="bContent"		type="string"	label="내용" />
+			<field name="bFile"		type="string"	label="파일명" />
+		</block>
+	</input>
+
+	<output>
+		<block>
+			
+		</block>
+	</output>
+
+</transaction>

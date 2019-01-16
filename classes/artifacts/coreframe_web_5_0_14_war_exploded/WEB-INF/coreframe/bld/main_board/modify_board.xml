@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<transaction name="select_board">
+
+	<processor-info type="dbms" datasource="mvc_board">
+		<transaction-type></transaction-type>
+		
+		<script language="java">
+			<![CDATA[				
+				executeSQL("modifyBoardData", connection, input, output);
+				
+				String bTitle = input.getText("bTitle");
+				String bContent = input.getText("bContent");
+				String bId = input.getText("bId");
+				System.out.println(".xml에서 "+bTitle);
+				System.out.println(".xml에서 "+bContent);
+				System.out.println(".xml에서 "+bId);
+				
+			]]>
+		</script>		
+		<sql id='modifyBoardData'>
+			<query>
+				<![CDATA[
+					update mvc_board set bName =:bName, bTitle =:bTitle, bContent =:bContent where bId =:bId
+					
+				]]>
+			</query>
+			<mapping>				
+				<setProperty></setProperty>							
+				<getProperty></getProperty>
+			</mapping>
+		</sql>
+	
+	</processor-info>
+
+	<input>
+		<block>			
+			<field name="bId"		type="int"		label="id" />
+			<field name="bTitle"	type="string"	label="제목" />
+			<field name="bName"		type="string"	label="작성자" />
+			<field name="bContent"	type="string"	label="내용" />
+			
+		</block>
+	</input>
+
+	<output>
+		<block>
+			
+		</block>
+	</output>
+
+</transaction>

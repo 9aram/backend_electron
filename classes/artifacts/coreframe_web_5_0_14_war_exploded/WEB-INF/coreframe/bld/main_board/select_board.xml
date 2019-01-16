@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<transaction name="select_board">
+
+	<processor-info type="dbms" datasource="mvc_board">
+		<transaction-type></transaction-type>
+		<script language="java">
+			<![CDATA[
+				String sqlID = input.getText("sqlID");	
+				String keyField = input.getText("keyField");	
+				String keyWord = input.getText("keyWord");	
+				String page = input.getText("page");
+				String endpage = input.getText("endpage");
+				
+				
+				if(sqlID.equals("getBoardData")){
+					executeSQL(sqlID, connection, input, output);
+					executeSQL("upHit", connection, input, output);
+				}else if(keyField.equals("bTitle")){ 
+					executeSQL("getBoardCount", connection, input, output);
+					executeSQL("getSearchList_bTitle", connection, input, output);
+					System.out.println("실행된 쿼리는  getSearchList_bTitle");
+					executeSQL("upHit", connection, input, output);
+				}
+				else if(keyField.equals("bContent")){ 
+					executeSQL("getBoardCount", connection, input, output);
+					executeSQL("getSearchList_bContent", connection, input, output);
+					System.out.println("실행된 쿼리는  getSearchList_bContent");
+					executeSQL("upHit", connection, input, output);
+				}
+				else if(keyField.equals("bName")){ 
+					executeSQL("getBoardCount", connection, input, output);
+					executeSQL("getSearchList_bName", connection, input, output);
+					System.out.println("실행된 쿼리는 getSearchList_bName ");
+					executeSQL("upHit", connection, input, output);
+				}
+				else {
+					executeSQL("getBoardCount", connection, input, output);
+					executeSQL("getBoardList", connection, input, output);
+						System.out.println("실행된 쿼리는 getBoardList");
+					executeSQL("upHit", connection, input, output);
+				}
+				
+				
+				
+			]]>
+		</script>
+		<sql id='getBoardCount'>
+			<query>
+				<![CDATA[
+					
+					SELECT count(*) as totalCount 
+					FROM mvc_board
+					WHERE bTitle LIKE :keyWord
+				]]>
+			</query>
+			
+			<mapping>
+				<setProperty></setProperty>
+				<getProperty>total_count</getProperty>
+			</mapping>
+		</sql>
+
+		<sql id='getBoardList'>
+			<query>
+				<![CDATA[
+					SELECT 
+						X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+                           
+						FROM (
+						
+						    SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+						    				
+						    FROM (
+
+								SELECT	* FROM mvc_board
+						        
+						        WHERE bTitle LIKE :keyWord
+						
+						        ORDER BY  bGroup DESC, bStep asc) A
+						
+						    WHERE ROWNUM < :endpage +1) X
+						
+						WHERE X.rown >= :page
+
+					
+				]]>
+			</query>
+			<mapping>
+
+				<setProperty></setProperty>
+
+				<getProperty>rown, bId, bName, bTitle, bContent, bDate, bHit,
+					bGroup, bStep, bIndent </getProperty>
+			</mapping>
+		</sql>
+
+		<sql id='getSearchList_bTitle'>
+			<query>
+				<![CDATA[
+					SELECT 
+						X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+                           
+						FROM (
+						
+						    SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+						    				
+						    FROM (
+
+								SELECT	* FROM mvc_board
+						        
+						        WHERE bTitle LIKE :keyWord
+						
+						        ORDER BY  bGroup DESC, bStep asc) A
+						
+						    WHERE ROWNUM < :endpage +1) X
+						
+						WHERE X.rown >= :page
+
+
+					
+				]]>
+			</query>
+			<mapping>
+
+				<setProperty></setProperty>
+
+				<getProperty>rown, bId, bName, bTitle, bContent, bDate, bHit,
+					bGroup, bStep, bIndent </getProperty>
+			</mapping>
+		</sql>
+		<sql id='getSearchList_bContent'>
+			<query>
+				<![CDATA[
+				SELECT 
+						X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+                           
+						FROM (
+						
+						    SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+						    				
+						    FROM (
+
+								SELECT	* FROM mvc_board
+						        
+						        WHERE bContent LIKE :keyWord
+						
+						        ORDER BY  bGroup DESC, bStep asc) A
+						
+						    WHERE ROWNUM < :endpage +1) X
+						
+						WHERE X.rown >= :page
+					
+				]]>
+			</query>
+			<mapping>
+
+				<setProperty></setProperty>
+
+				<getProperty>rown, bId, bName, bTitle, bContent, bDate, bHit,
+					bGroup, bStep, bIndent </getProperty>
+			</mapping>
+		</sql>
+		<sql id='getSearchList_bName'>
+			<query>
+				<![CDATA[
+				SELECT 
+						X.rown, X.bId, X.bName, X.bTitle, X.bContent, X.bDate, X.bHit, X.bGroup, X.bStep, X.bIndent
+                           
+						FROM (
+						
+						    SELECT ROWNUM as rown, A.bId, A.bName, A.bTitle, A.bContent, A.bDate, A.bHit, A.bGroup, A.bStep, A.bIndent
+						    				
+						    FROM (
+
+								SELECT	* FROM mvc_board
+						        
+						        WHERE bName LIKE :keyWord
+						
+						        ORDER BY  bGroup DESC, bStep asc) A
+						
+						    WHERE ROWNUM < :endpage +1) X
+						
+						WHERE X.rown >= :page
+					
+				]]>
+			</query>
+			<mapping>
+
+				<setProperty></setProperty>
+
+				<getProperty>rown, bId, bName, bTitle, bContent, bDate, bHit,
+					bGroup, bStep, bIndent </getProperty>
+			</mapping>
+		</sql>
+
+		<sql id='getBoardData'>
+			<query>
+				<![CDATA[
+									
+					select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent, bFile from mvc_board 
+					WHERE bId = :bId
+					 
+				]]>
+			</query>
+			<mapping>
+				<setProperty></setProperty>
+				<getProperty>bId, bName, bTitle, bContent, bDate, bHit, bGroup,
+					bStep, bIndent, bFile</getProperty>
+			</mapping>
+		</sql>
+
+		<sql id='upHit'>
+			<query>
+				<![CDATA[
+								
+					update mvc_board set bHit = bHit + 1 where bId =:bId
+				
+				]]>
+			</query>
+			<mapping>
+				<setProperty></setProperty>
+				<getProperty></getProperty>
+			</mapping>
+		</sql>
+
+	</processor-info>
+
+	<input>
+		<block>
+			<field name="keyField" type="string" label="검색분야" />
+			<field name="keyWord" type="string" laber="검색단어" />
+			<field name="bId" type="int" laber="id" />
+			<field name="page" type="int" laber="첫페이지" />
+			<field name="endpage" type="int" laber="마지막페이지" />
+
+		</block>
+	</input>
+
+	<output>
+		<block>
+			<field name="rown" type="int" label="임시번호" />
+			<field name="bId" type="int" label="번호" />
+			<field name="bName" type="string" label="이름" />
+			<field name="bTitle" type="string" label="제목" />
+			<field name="bContent" type="string" label="내용" />
+			<field name="bDate" type="string" label="날짜"
+				format="yyyyMMddHHmmss->yyyy-MM-dd HH:mm:ss" />
+
+			<field name="bHit" type="int" label="조회수" />
+			<field name="bGroup" type="int" label="그룹" />
+			<field name="bStep" type="int" label="단계" />
+			<field name="bIndent" type="int" label="들여쓰기" />
+			<field name="bFile" type="string" label="파일이름" />
+			<field name="total_count" type="string" label="총 게시물 갯수" />
+		</block>
+	</output>
+
+</transaction>

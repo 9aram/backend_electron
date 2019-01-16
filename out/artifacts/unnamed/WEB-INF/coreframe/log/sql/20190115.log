@@ -1,0 +1,54 @@
+19/01/15 17:07:23.290 030 W1 <Q> TR:/member/insert_member ID:insertMember
+INSERT INTO member(id, pw)
+VALUES(?, ?)
+19/01/15 17:07:23.691 030 W1 <Q> 1:String = ee
+19/01/15 17:07:23.691 030 W1 <Q> 2:String = ee
+19/01/15 17:07:23.691 030 W1 <Q> TR:/member/insert_member ID:insertMember updateNum:1
+19/01/15 17:07:44.027 033 W1 <Q> TR:/member/insert_member ID:insertMember
+INSERT INTO member(id, pw)
+VALUES(?, ?)
+19/01/15 17:07:44.027 033 W1 <Q> 1:String = ee
+19/01/15 17:07:44.027 033 W1 <Q> 2:String = ee
+19/01/15 17:07:44.053 033 W1 <Q> TR:/member/insert_member ID:insertMember SQL ERROR:1
+19/01/15 17:07:56.454 034 W1 <Q> TR:/member/insert_member ID:insertMember
+INSERT INTO member(id, pw)
+VALUES(?, ?)
+19/01/15 17:07:56.455 034 W1 <Q> 1:String = tt
+19/01/15 17:07:56.455 034 W1 <Q> 2:String = tt
+19/01/15 17:07:56.459 034 W1 <Q> TR:/member/insert_member ID:insertMember updateNum:1
+19/01/15 17:08:35.189 026 W1 <Q> TR:/member/insert_member ID:insertMember
+INSERT INTO member(id, pw)
+VALUES(?, ?)
+19/01/15 17:08:35.189 026 W1 <Q> 1:String = yy
+19/01/15 17:08:35.189 026 W1 <Q> 2:String = yy
+19/01/15 17:08:35.191 026 W1 <Q> TR:/member/insert_member ID:insertMember updateNum:1
+19/01/15 17:08:48.769 029 W1 <Q> TR:/member/login_confirm ID:loginConfirm
+SELECT id, pw FROM MEMBER WHERE ID = :ID
+19/01/15 17:08:48.769 029 W1 <Q> 1:String = yy
+19/01/15 17:09:08.261 031 W1 <Q> TR:/member/login_confirm ID:loginConfirm
+SELECT id, pw FROM MEMBER WHERE ID = :ID
+19/01/15 17:09:08.262 031 W1 <Q> 1:String = yy
+19/01/15 17:11:57.478 032 W1 <Q> TR:/member/login_confirm ID:loginConfirm
+SELECT id, pw FROM MEMBER WHERE ID = :ID
+19/01/15 17:11:57.478 032 W1 <Q> 1:String = dd
+19/01/15 17:11:58.683 033 W1 <Q> TR:/member/insert_member ID:insertMember
+INSERT INTO member(id, pw)
+VALUES(?, ?)
+19/01/15 17:11:58.683 033 W1 <Q> 1:String = dd
+19/01/15 17:11:58.683 033 W1 <Q> 2:String = dd
+19/01/15 17:11:58.687 033 W1 <Q> TR:/member/insert_member ID:insertMember updateNum:1
+19/01/15 17:12:16.513 035 W1 <Q> TR:/member/login_confirm ID:loginConfirm
+SELECT id, pw FROM MEMBER WHERE ID = :ID
+19/01/15 17:12:16.513 035 W1 <Q> 1:String = dd
+19/01/15 17:19:06.105 029 W1 <Q> TR:/member/insert_member ID:insertMember
+INSERT INTO member(id, pw)
+VALUES(?, ?)
+19/01/15 17:19:06.106 029 W1 <Q> 1:String = ¤·¤·
+19/01/15 17:19:06.106 029 W1 <Q> 2:String = dd
+19/01/15 17:19:06.109 029 W1 <Q> TR:/member/insert_member ID:insertMember updateNum:1
+19/01/15 17:21:28.582 033 W1 <Q> TR:/member/insert_member ID:insertMember
+INSERT INTO member(id, pw)
+VALUES(?, ?)
+19/01/15 17:21:28.582 033 W1 <Q> 1:String = rr
+19/01/15 17:21:28.582 033 W1 <Q> 2:String = rr
+19/01/15 17:21:28.585 033 W1 <Q> TR:/member/insert_member ID:insertMember updateNum:1

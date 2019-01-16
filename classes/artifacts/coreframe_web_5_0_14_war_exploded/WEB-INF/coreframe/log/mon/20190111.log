@@ -1,0 +1,12 @@
+19/01/11 10:50:45.372 066 W1 <M> 29 coreview.layout.filter.UIFilter (/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 35
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardCount) 559
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 31
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 639
+2 coreframe.db.ConnectionManager (mvc_board) 34
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardCount) 2
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 2
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 39
+0 coreview.layout.filter.UIFilter (/curriculum1.4/controller.jspx) 8187

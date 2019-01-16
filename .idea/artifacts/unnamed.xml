@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="coreframe-web-5.0.14" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="coreframe-web-5.0.14/web/Web" />
+    </root>
+  </artifact>
+</component>

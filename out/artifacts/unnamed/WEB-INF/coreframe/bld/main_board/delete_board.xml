@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<transaction name="select_board">
+
+	<processor-info type="dbms" datasource="mvc_board">
+		<transaction-type></transaction-type>
+		
+		<script language="java">
+			<![CDATA[				
+				executeSQL("deleteBoardData", connection, input, output);
+							
+			]]>
+		</script>		
+		<sql id='deleteBoardData'>
+			<query>
+				<![CDATA[
+					delete from mvc_board where bId = :bId
+				]]>
+			</query>
+			<mapping>				
+				<setProperty></setProperty>							
+				<getProperty></getProperty>
+			</mapping>
+		</sql>
+	
+	</processor-info>
+
+	<input>
+		<block>			
+			<field name="bId"		type="int"		label="id" />
+		</block>
+	</input>
+
+	<output>
+		<block>
+			
+		</block>
+	</output>
+
+</transaction>

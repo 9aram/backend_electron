@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<transaction name="select_board">
+
+	<processor-info type="dbms" datasource="mvc_board">
+		<transaction-type></transaction-type>
+		<script language="java">
+			<![CDATA[
+				String sqlID = input.getText("sqlID");	
+				
+				System.out.println("진입");	
+				System.out.println(sqlID);
+
+				if(sqlID.equals("addReplyBoardData")){
+					
+					executeSQL(sqlID, connection, input, output);
+					
+				} 
+					
+			]]>
+		</script>
+
+			<sql id='addReplyBoardData'>
+			<query>
+				<![CDATA[
+	
+					INSERT INTO mvc_board(bId, bTitle, bName, bContent, bHit, bGroup, bStep, bIndent, bFile)
+					
+					VALUES(mvc_board_seq.nextval, :bTitle, :bName, :bContent, 0, :bGroup, :bStep +1, :bIndent +1, :bFile)
+					
+				]]>
+			</query>
+			<mapping>				
+				<setProperty></setProperty>							
+				<getProperty></getProperty>
+			</mapping>
+		</sql>
+		<sql id='replyShape'>
+			<query>
+				<![CDATA[
+	
+					update mvc_board set bStep = bStep + 1 where bGroup = :bGroup and bStep > :bStep"
+					
+				]]>
+			</query>
+			<mapping>				
+				<setProperty></setProperty>							
+				<getProperty></getProperty>
+			</mapping>
+		</sql>
+	
+	</processor-info>
+
+	<input>
+		<block>			
+			<field name="bTitle"		type="string"	label="제목" />
+			<field name="bName"			type="string"	label="작성자" />
+			<field name="bContent"		type="string"	label="내용" />
+			<field name="bFile"			type="string"	label="파일명" />
+			<field name="bGroup"		type="int"		label="그룹" />
+			<field name="bStep"			type="int"		label="단계" />
+			<field name="bIndent"		type="int"		label="들여쓰기" />
+			
+		</block>
+	</input>
+
+	<output>
+		<block>
+	
+		</block>
+	</output>
+
+</transaction>

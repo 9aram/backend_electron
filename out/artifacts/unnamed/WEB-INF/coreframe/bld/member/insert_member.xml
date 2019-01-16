@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<transaction name="insert_member">
+
+	<processor-info type="dbms" datasource="member">
+		<transaction-type></transaction-type>
+		<script language="java">
+			<![CDATA[
+				String sqlID = input.getText("sqlID");
+				System.out.println("진입");
+				System.out.println(sqlID);
+				if(sqlID.equals("insertMember")){
+					executeSQL(sqlID, connection, input, output);
+				}
+
+			]]>
+		</script>
+		<sql id='insertMember'>
+			<query>
+				<![CDATA[
+					INSERT INTO member(id, pw)
+					VALUES(:id, :pw)
+				]]>
+			</query>
+			<mapping>
+				<setProperty></setProperty>
+				<getProperty></getProperty>
+			</mapping>
+		</sql>
+
+	</processor-info>
+
+	<input>
+		<block>
+			<field name="id"		type="string"	label="id" />
+			<field name="pw"			type="string"	label="passward" />
+		</block>
+	</input>
+
+	<output>
+		<block>
+
+		</block>
+	</output>
+
+</transaction>

@@ -1,0 +1,173 @@
+18/11/02 10:06:54.687 016 W1 <M> 43 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/apps/admin)
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/apps/admin) 4626
+18/11/02 10:06:54.687 016 W1 <M> 41 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/apps/admin)
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/apps/admin) 7117
+18/11/02 10:06:57.913 018 W1 <M> 48 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/apps/admin/sysinfo)
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/apps/admin/sysinfo) 2581
+18/11/02 10:08:35.209 021 W1 <M> 50 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/coreframe/sample-application/case2/city.jsp)
+2 coreframe.db.ConnectionManager (derbyPool) 0
+2 corelogic.spi.process.QueryOperator (TR:samples/database/listCities ID:query1) 1522
+1 corelogic.adapter.LocalInteraction (dbms samples/database/listCities) 1536
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/coreframe/sample-application/case2/city.jsp) 2184
+18/11/02 10:09:18.962 016 W1 <M> 47 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/coreframe/sample-application/case3/city.jsp)
+2 coreframe.db.ConnectionManager (derbyPool) 0
+2 corelogic.spi.process.QueryOperator (TR:samples/database/listCities ID:query1) 9
+1 corelogic.adapter.LocalInteraction (dbms samples/database/listCities) 12
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/coreframe/sample-application/case3/city.jsp) 1753
+18/11/02 10:09:48.335 022 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+org.apache.jasper.JasperException: An exception occurred processing JSP page [/coreframe/sample-application/case1/list.jsp] at line [10]
+
+7: <%
+8: 	InteractionBean interact = new InteractionBean();
+9: 
+10: 	DataSet input = interact.getDataSet(request);
+11: 	DataSet output = new DataSet();
+12: 
+13: 	if ("delete".equals(request.getParameter("cmd")))
+
+
+Stacktrace:
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:598)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:495)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:643)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [searchType] value: ����+����: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:227)
+	at coreframe.http.RequestAttributes.<init>(RequestAttributes.java:48)
+	at coreframe.http.HttpAttributes.getInstance(HttpAttributes.java:170)
+	at coreframe.http.HttpAttributes.getInstance(HttpAttributes.java:130)
+	at coreframe.data.InteractionBean.getHttpAttributes(InteractionBean.java:34)
+	at coreframe.data.InteractionBean.getDataSet(InteractionBean.java:56)
+	at org.apache.jsp.coreframe.sample_002dapplication.case1.list_jsp._jspService(list_jsp.java:119)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: org.owasp.esapi.errors.ValidationException: HTTP parameter [searchType] value: ����+����: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at org.owasp.esapi.reference.validation.StringValidationRule.checkWhitelist(StringValidationRule.java:144)
+	at org.owasp.esapi.reference.validation.StringValidationRule.getValid(StringValidationRule.java:306)
+	at org.owasp.esapi.reference.DefaultValidator.getValidInput(DefaultValidator.java:214)
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:218)
+	... 37 more
+
+18/11/02 10:11:07.230 023 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [35] in the jsp file: [/coreframe/stockchart/data/chartdata.jsp]
+ChartData cannot be resolved to a type
+32: 			 * getInstance 메소드 정의 방법 : getInstance(데이터생성타입)
+33: 			 * 데이터생성타입 : ChartData.TXT_TYPE(TXT 타입)
+34: 			 **/
+35: 			ChartData data = ChartDataFactory.getInstance(ChartData.TXT_TYPE);
+36: 				
+37: 			
+38: 			//JSP 페이지에서 사용시 아래의 방법으로 사용하여야 한다.
+
+
+An error occurred at line: [35] in the jsp file: [/coreframe/stockchart/data/chartdata.jsp]
+ChartDataFactory cannot be resolved
+32: 			 * getInstance 메소드 정의 방법 : getInstance(데이터생성타입)
+33: 			 * 데이터생성타입 : ChartData.TXT_TYPE(TXT 타입)
+34: 			 **/
+35: 			ChartData data = ChartDataFactory.getInstance(ChartData.TXT_TYPE);
+36: 				
+37: 			
+38: 			//JSP 페이지에서 사용시 아래의 방법으로 사용하여야 한다.
+
+
+An error occurred at line: [35] in the jsp file: [/coreframe/stockchart/data/chartdata.jsp]
+ChartData.TXT_TYPE cannot be resolved to a type
+32: 			 * getInstance 메소드 정의 방법 : getInstance(데이터생성타입)
+33: 			 * 데이터생성타입 : ChartData.TXT_TYPE(TXT 타입)
+34: 			 **/
+35: 			ChartData data = ChartDataFactory.getInstance(ChartData.TXT_TYPE);
+36: 				
+37: 			
+38: 			//JSP 페이지에서 사용시 아래의 방법으로 사용하여야 한다.
+
+
+An error occurred at line: [44] in the jsp file: [/coreframe/stockchart/data/chartdata.jsp]
+ChartData.CANDLE_COLUMN cannot be resolved to a type
+41: 					out.clear();	//out : jsp 자체객체
+42: 					out = pageContext.pushBody();				
+43: 					
+44: 					data.createData(ChartData.CANDLE_COLUMN, outputList, outputMap, response.getOutputStream());
+45: 				} catch(Exception e) {
+46: 					e.printStackTrace();
+47: 				}	
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:212)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:378)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:350)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:595)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:382)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+18/11/02 10:38:33.313 019 W1 <M> 14 coreframe.db.ConnectionManager (derbyPool)
+0 coreframe.db.ConnectionManager (derbyPool) 1205
+18/11/02 13:37:19.014 017 W1 <M> 14 coreframe.db.ConnectionManager (derbyPool)
+0 coreframe.db.ConnectionManager (derbyPool) 1287

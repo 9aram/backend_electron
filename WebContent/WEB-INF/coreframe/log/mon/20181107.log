@@ -1,0 +1,2365 @@
+18/11/07 09:46:08.314 019 W1 <M> 40 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 133
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 620
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 759
+2 coreframe.db.ConnectionManager (mvc_board) 36
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 5
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 41
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 4835
+18/11/07 09:47:40.377 018 W1 <M> 43 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=123&keyField=bTitle)
+2 coreframe.db.ConnectionManager (mvc_board) 50
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 57
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=123&keyField=bTitle) 2733
+18/11/07 09:47:40.382 022 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1994)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4348)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:23)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 10:05:04.969 018 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1994)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4348)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:23)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 10:06:32.011 018 W1 <M> 39 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 127
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 240
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 367
+2 coreframe.db.ConnectionManager (mvc_board) 354
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 65
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 419
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2590
+18/11/07 10:09:13.962 020 W1 <M> 47 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board)
+2 coreframe.db.ConnectionManager (mvc_board) 57
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 7
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 74
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board) 2377
+18/11/07 10:09:13.974 018 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1994)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4348)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:23)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 10:09:46.111 022 W1 <M> 45 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board)
+2 coreframe.db.ConnectionManager (mvc_board) 113
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 4
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 117
+2 coreframe.db.ConnectionManager (mvc_board) 76
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 78
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board) 2783
+18/11/07 10:11:17.624 021 W1 <M> 44 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=123&keyField=bTitle)
+2 coreframe.db.ConnectionManager (mvc_board) 48
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 49
+2 coreframe.db.ConnectionManager (mvc_board) 33
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 34
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=123&keyField=bTitle) 1559
+18/11/07 10:18:49.691 017 W1 <M> 40 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=123&keyField=bTitle)
+2 coreframe.db.ConnectionManager (mvc_board) 85
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 88
+2 coreframe.db.ConnectionManager (mvc_board) 59
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 61
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=123&keyField=bTitle) 1937
+18/11/07 11:03:23.664 021 W1 <M> 39 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 51
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 18
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 75
+2 coreframe.db.ConnectionManager (mvc_board) 34
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 14
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 48
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1093
+18/11/07 11:17:53.984 023 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 234
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 92
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 326
+2 coreframe.db.ConnectionManager (mvc_board) 234
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 33
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 267
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2564
+18/11/07 11:19:10.025 021 W1 <M> 45 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 48
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 4
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 52
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 1443
+18/11/07 11:22:33.825 017 W1 <M> 40 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=73)
+2 coreframe.db.ConnectionManager (mvc_board) 47
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardData) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 48
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=73) 1033
+18/11/07 11:24:09.516 019 W1 <M> 38 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 60
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 62
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 2409
+18/11/07 11:24:11.992 019 W1 <M> 42 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 45
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 46
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 3108
+18/11/07 11:27:36.453 019 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 51
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 53
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 1574
+18/11/07 11:30:58.887 020 W1 <M> 45 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 287
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 509
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 802
+2 coreframe.db.ConnectionManager (mvc_board) 36
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 10
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 46
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1260
+18/11/07 11:31:48.460 017 W1 <M> 41 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 174
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 56
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 231
+2 coreframe.db.ConnectionManager (mvc_board) 177
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 18
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 195
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2256
+18/11/07 11:32:06.442 023 W1 <M> 42 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 283
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 3
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 288
+2 coreframe.db.ConnectionManager (mvc_board) 236
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 62
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 298
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2146
+18/11/07 13:08:21.330 022 W1 <M> 38 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=73)
+2 coreframe.db.ConnectionManager (mvc_board) 410
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardData) 815
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 1231
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=73) 1684
+18/11/07 13:45:45.705 022 W1 <M> 38 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=161)
+2 coreframe.db.ConnectionManager (mvc_board) 529
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardData) 6
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 535
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=161) 3227
+18/11/07 13:50:52.705 018 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 128
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 132
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 1784
+18/11/07 13:56:12.424 023 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=writeContents)
+2 coreframe.db.ConnectionManager (mvc_board) 72
+2 corelogic.spi.process.QueryOperator (TR:/main_board/insert_board ID:addBoardData) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/insert_board) 75
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=writeContents) 1542
+18/11/07 13:59:00.098 018 W1 <M> 39 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 167
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 20
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 187
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 2617
+18/11/07 14:01:03.957 020 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 52
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 54
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 1832
+18/11/07 14:06:25.919 021 W1 <M> 38 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 22
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 24
+2 coreframe.db.ConnectionManager (mvc_board) 75
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 77
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1037
+18/11/07 14:07:45.076 017 W1 <M> 41 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 122
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 130
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 3004
+18/11/07 14:07:45.108 023 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/modify_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 4; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 4
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/modify_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 4; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 4
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.modifyContents(controller_jspx.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 4
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1994)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4348)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4531)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:5575)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1171)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_modify_board.execute(C_main_board_modify_board.java:13)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 14:08:09.976 017 W1 <M> 40 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 130
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 211
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 2860
+18/11/07 14:08:09.976 017 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/modify_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 4; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 4
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/modify_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 4; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 4
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.modifyContents(controller_jspx.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 4
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1994)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4348)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4531)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:5575)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1171)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_modify_board.execute(C_main_board_modify_board.java:13)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 14:08:16.095 017 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/modify_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 4; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 4
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/modify_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 4; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 4
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.modifyContents(controller_jspx.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 4
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1994)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4348)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4531)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:5575)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1171)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_modify_board.execute(C_main_board_modify_board.java:13)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 14:09:15.942 022 W1 <M> 45 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 207
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 3
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 211
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 1914
+18/11/07 14:09:30.474 017 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+org.apache.jasper.JasperException: javax.servlet.ServletException: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bName] value: ``: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:615)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:480)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.servlet.ServletException: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bName] value: ``: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at coreframe.http.JspxController.doService(JspxController.java:322)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bName] value: ``: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:227)
+	at coreframe.http.WebController.bindDataset(WebController.java:570)
+	at coreframe.http.WebController.bind(WebController.java:438)
+	at coreframe.http.WebController.bind(WebController.java:425)
+	at coreframe.http.ViewMeta.getInputDataSet(ViewMeta.java:139)
+	at org.apache.jsp.curriculum1_4.controller_jspx.modifyContents(controller_jspx.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	... 30 more
+Caused by: org.owasp.esapi.errors.ValidationException: HTTP parameter [bName] value: ``: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at org.owasp.esapi.reference.validation.StringValidationRule.checkWhitelist(StringValidationRule.java:144)
+	at org.owasp.esapi.reference.validation.StringValidationRule.getValid(StringValidationRule.java:306)
+	at org.owasp.esapi.reference.DefaultValidator.getValidInput(DefaultValidator.java:214)
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:218)
+	... 41 more
+
+18/11/07 14:10:08.240 020 W1 <M> 39 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 61
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 63
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 1548
+18/11/07 14:13:20.614 021 W1 <M> 44 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=11&keyField=bTitle)
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=11&keyField=bTitle) 1869
+18/11/07 14:13:20.614 021 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: corelogic.spi.process.compiler.CompileException: C_main_board_select_board compile error
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:19: error: cannot find symbol
+				if(keyField.equals(bTitle)){
+				                   ^
+  symbol:   variable bTitle
+  location: class C_main_board_select_board
+1 error
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: corelogic.spi.process.compiler.CompileException: C_main_board_select_board compile error
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:19: error: cannot find symbol
+				if(keyField.equals(bTitle)){
+				                   ^
+  symbol:   variable bTitle
+  location: class C_main_board_select_board
+1 error
+
+	at corelogic.spi.process.compiler.Compiler.generateClass(Compiler.java:120)
+	at corelogic.spi.adapter.AbstractProcessorFactory.getProcessor(AbstractProcessorFactory.java:119)
+	at corelogic.spi.management.BusinessLogicContext$BusinessLogicContextProcess.getBusinessLogicContext(BusinessLogicContext.java:608)
+	at corelogic.spi.management.BusinessLogicContext.getBusinessLogicContext(BusinessLogicContext.java:337)
+	at corelogic.spi.management.BLContextFactory.getBusinessLogicContext(BLContextFactory.java:361)
+	at corelogic.spi.management.BLContextFactory.getBusinessLogicContext(BLContextFactory.java:515)
+	at corelogic.spi.management.BLContextFactory.getBusinessLogicContext(BLContextFactory.java:434)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:149)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+
+18/11/07 14:13:44.512 022 W1 <M> 43 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=111&keyField=bTitle)
+2 coreframe.db.ConnectionManager (mvc_board) 78
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 28
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 106
+2 coreframe.db.ConnectionManager (mvc_board) 120
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 54
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 174
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board&keyWord=111&keyField=bTitle) 1757
+18/11/07 14:36:17.064 017 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=148)
+2 coreframe.db.ConnectionManager (mvc_board) 159
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardData) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 161
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=148) 2671
+18/11/07 14:36:25.182 018 W1 <M> 45 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 68
+2 corelogic.spi.process.QueryOperator (TR:/main_board/modify_board ID:modifyBoardData) 8
+1 corelogic.adapter.LocalInteraction (dbms /main_board/modify_board) 77
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=modifyContents) 1697
+18/11/07 14:39:21.641 020 W1 <M> 41 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=162)
+2 coreframe.db.ConnectionManager (mvc_board) 88
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardData) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 89
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=162) 1413
+18/11/07 14:39:24.925 023 W1 <M> 38 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=deleteContents&bId=162)
+2 coreframe.db.ConnectionManager (mvc_board) 44
+2 corelogic.spi.process.QueryOperator (TR:/main_board/delete_board ID:deleteBoardData) 3
+1 corelogic.adapter.LocalInteraction (dbms /main_board/delete_board) 47
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=deleteContents&bId=162) 1712
+18/11/07 14:41:10.297 016 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=deleteContents&bId=146)
+2 coreframe.db.ConnectionManager (mvc_board) 81
+2 corelogic.spi.process.QueryOperator (TR:/main_board/delete_board ID:deleteBoardData) 5
+1 corelogic.adapter.LocalInteraction (dbms /main_board/delete_board) 86
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=deleteContents&bId=146) 1640
+18/11/07 15:07:40.221 021 W1 <M> 43 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=142)
+2 coreframe.db.ConnectionManager (mvc_board) 96
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardData) 2
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 9
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 115
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=142) 1965
+18/11/07 15:13:33.899 018 W1 <M> 44 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=142)
+2 coreframe.db.ConnectionManager (mvc_board) 23
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardData) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 13
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 37
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=contents&bId=142) 1461
+18/11/07 15:38:08.110 017 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+org.apache.jasper.JasperException: javax.servlet.ServletException: replyContents method is not exist
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:615)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:480)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.servlet.ServletException: replyContents method is not exist
+	at coreframe.http.JspxController.notFoundMethod(JspxController.java:391)
+	at coreframe.http.JspxController.doService(JspxController.java:276)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+
+18/11/07 15:43:55.505 017 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents&bId=75)
+2 coreframe.db.ConnectionManager (mvc_board) 62
+2 corelogic.spi.process.QueryOperator (TR:/main_board/reply_board ID:getReplyData) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/reply_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/reply_board) 65
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents&bId=75) 3131
+18/11/07 16:33:08.301 020 W1 <M> 41 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 150
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 3
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 154
+2 coreframe.db.ConnectionManager (mvc_board) 871
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 10
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 884
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1046
+18/11/07 16:34:05.129 018 W1 <M> 41 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 47
+1 corelogic.adapter.LocalInteraction (dbms /main_board/reply_board) 47
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents) 2054
+18/11/07 16:41:40.353 019 W1 <M> 38 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 162
+2 corelogic.spi.process.QueryOperator (TR:/main_board/reply_board ID:replyShape) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/reply_board) 175
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents) 1615
+18/11/07 16:42:32.187 022 W1 <M> 45 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 74
+2 corelogic.spi.process.QueryOperator (TR:/main_board/reply_board ID:addReplyBoardData) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/reply_board) 89
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents) 1593
+18/11/07 16:48:06.546 020 W1 <M> 39 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents)
+2 coreframe.db.ConnectionManager (mvc_board) 45
+2 corelogic.spi.process.QueryOperator (TR:/main_board/reply_board ID:addReplyBoardData) 46
+1 corelogic.adapter.LocalInteraction (dbms /main_board/reply_board) 91
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=replyContents) 1629
+18/11/07 16:49:48.907 023 W1 <M> 47 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 61
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 15
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 78
+2 coreframe.db.ConnectionManager (mvc_board) 191
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 5
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 196
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2285
+18/11/07 16:50:11.393 018 W1 <M> 43 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 25
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 23
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 50
+2 coreframe.db.ConnectionManager (mvc_board) 33
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 37
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2133
+18/11/07 16:51:14.594 020 W1 <M> 38 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 31
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 15
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 47
+2 coreframe.db.ConnectionManager (mvc_board) 26
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 28
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2068
+18/11/07 16:51:24.408 020 W1 <M> 47 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 62
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 2
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 65
+2 coreframe.db.ConnectionManager (mvc_board) 20
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 22
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2281
+18/11/07 16:56:58.725 019 W1 <M> 39 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 22
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 26
+2 coreframe.db.ConnectionManager (mvc_board) 24
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 25
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2276
+18/11/07 16:57:11.807 021 W1 <M> 44 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 29
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 17
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 46
+2 coreframe.db.ConnectionManager (mvc_board) 25
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 27
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1904
+18/11/07 16:58:29.502 023 W1 <M> 39 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 503
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 3
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 513
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1949
+18/11/07 16:58:29.502 023 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:28)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 39 more
+
+18/11/07 16:58:35.722 022 W1 <M> 41 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 83
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 42
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 127
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1723
+18/11/07 16:58:35.725 017 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:28)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 39 more
+
+18/11/07 16:58:43.902 023 W1 <M> 45 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 73
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 3
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 77
+2 coreframe.db.ConnectionManager (mvc_board) 96
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 2
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 100
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2072
+18/11/07 16:59:10.992 020 W1 <M> 42 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 126
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 128
+2 coreframe.db.ConnectionManager (mvc_board) 81
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 83
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2492
+18/11/07 16:59:23.199 023 W1 <M> 39 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 83
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 35
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 119
+2 coreframe.db.ConnectionManager (mvc_board) 62
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 2
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 66
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2078
+18/11/07 16:59:38.566 019 W1 <M> 45 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 148
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 17
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 169
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2273
+18/11/07 16:59:38.566 019 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:28)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 39 more
+
+18/11/07 16:59:38.618 021 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:28)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 39 more
+
+18/11/07 16:59:38.741 022 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:28)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 39 more
+
+18/11/07 16:59:38.852 016 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:28)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 39 more
+
+18/11/07 16:59:49.164 023 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00933: SQL command not properly ended
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:59)
+	at sun.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:28)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 39 more
+
+18/11/07 16:59:55.376 020 W1 <M> 41 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 22
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 24
+2 coreframe.db.ConnectionManager (mvc_board) 26
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 1
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 28
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1970
+18/11/07 17:51:51.088 019 W1 <M> 38 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board)
+2 coreframe.db.ConnectionManager (mvc_board) 101
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 17
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 118
+2 coreframe.db.ConnectionManager (mvc_board) 101
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 12
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 114
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx?cmd=board) 3431
+18/11/07 18:11:05.836 020 W1 <M> 38 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2339
+18/11/07 18:11:05.871 023 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: corelogic.spi.process.compiler.CompileException: C_main_board_select_board compile error
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:18: error: cannot find symbol
+				executeSQL(getSearchList, connection, input, output);
+				           ^
+  symbol:   variable getSearchList
+  location: class C_main_board_select_board
+1 error
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: corelogic.spi.process.compiler.CompileException: C_main_board_select_board compile error
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:18: error: cannot find symbol
+				executeSQL(getSearchList, connection, input, output);
+				           ^
+  symbol:   variable getSearchList
+  location: class C_main_board_select_board
+1 error
+
+	at corelogic.spi.process.compiler.Compiler.generateClass(Compiler.java:120)
+	at corelogic.spi.adapter.AbstractProcessorFactory.getProcessor(AbstractProcessorFactory.java:119)
+	at corelogic.spi.management.BusinessLogicContext$BusinessLogicContextProcess.getBusinessLogicContext(BusinessLogicContext.java:608)
+	at corelogic.spi.management.BusinessLogicContext.getBusinessLogicContext(BusinessLogicContext.java:337)
+	at corelogic.spi.management.BLContextFactory.getBusinessLogicContext(BLContextFactory.java:361)
+	at corelogic.spi.management.BLContextFactory.getBusinessLogicContext(BLContextFactory.java:515)
+	at corelogic.spi.management.BLContextFactory.getBusinessLogicContext(BLContextFactory.java:434)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:149)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+
+18/11/07 18:11:32.165 017 W1 <M> 45 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 40
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 44
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1633
+18/11/07 18:11:32.172 016 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1994)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4348)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:18)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 18:12:37.653 016 W1 <M> 41 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 104
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 133
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 247
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1978
+18/11/07 18:12:37.655 023 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00936: missing expression
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00936: missing expression
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:18)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 18:12:54.027 019 W1 <M> 42 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 55
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 0
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 56
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2989
+18/11/07 18:12:54.033 019 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:인덱스에서 누락된 IN 또는 OUT 매개변수:: 2; nested exception is: 
+	java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLException: 인덱스에서 누락된 IN 또는 OUT 매개변수:: 2
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1994)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4348)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:18)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 18:13:02.806 018 W1 <M> 47 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 78
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 80
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1738
+18/11/07 18:13:02.822 017 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00936: missing expression
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00936: missing expression
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:18)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 18:16:28.063 019 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00936: missing expression
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00936: missing expression
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:18)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 18:16:35.153 019 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 1641
+18/11/07 18:16:35.246 019 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: corelogic.spi.process.compiler.CompileException: C_main_board_select_board compile error
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:15: error: illegal start of expression
+=
+^
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:17: error: illegal start of expression
+				if(sqlID.equals("getBoardData")){
+				^
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:17: error: not a statement
+				if(sqlID.equals("getBoardData")){
+				  ^
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:17: error: ';' expected
+				if(sqlID.equals("getBoardData")){
+				                                ^
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:20: error: 'else' without 'if'
+				}else if(keyField.equals("bTitle")){ 
+				 ^
+5 errors
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: corelogic.spi.process.compiler.CompileException: C_main_board_select_board compile error
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:15: error: illegal start of expression
+=
+^
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:17: error: illegal start of expression
+				if(sqlID.equals("getBoardData")){
+				^
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:17: error: not a statement
+				if(sqlID.equals("getBoardData")){
+				  ^
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:17: error: ';' expected
+				if(sqlID.equals("getBoardData")){
+				                                ^
+C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\WEB-INF\coreframe\_work\gen_java\C_main_board_select_board.java:20: error: 'else' without 'if'
+				}else if(keyField.equals("bTitle")){ 
+				 ^
+5 errors
+
+	at corelogic.spi.process.compiler.Compiler.generateClass(Compiler.java:120)
+	at corelogic.spi.adapter.AbstractProcessorFactory.getProcessor(AbstractProcessorFactory.java:119)
+	at corelogic.spi.management.BusinessLogicContext$BusinessLogicContextProcess.getBusinessLogicContext(BusinessLogicContext.java:608)
+	at corelogic.spi.management.BusinessLogicContext.getBusinessLogicContext(BusinessLogicContext.java:337)
+	at corelogic.spi.management.BLContextFactory.getBusinessLogicContext(BLContextFactory.java:361)
+	at corelogic.spi.management.BLContextFactory.getBusinessLogicContext(BLContextFactory.java:515)
+	at corelogic.spi.management.BLContextFactory.getBusinessLogicContext(BLContextFactory.java:434)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:149)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+
+18/11/07 18:16:59.009 016 W1 <M> 42 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 503
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getSearchList) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 505
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2416
+18/11/07 18:16:59.010 016 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00936: missing expression
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: coreframe.data.ResourceException: /main_board/select_board SQLException:ORA-00936: missing expression
+; nested exception is: 
+	java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:196)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:69)
+	at corelogic.adapter.LocalInteraction.execute(LocalInteraction.java:277)
+	at coreframe.data.InteractionBean.execute(InteractionBean.java:120)
+	at org.apache.jsp.curriculum1_4.controller_jspx.board(controller_jspx.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00936: missing expression
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:238)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:1196)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1444)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1662)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:4364)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:4445)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:6268)
+	at corelogic.spi.process.QueryOperator.execute(QueryOperator.java:1195)
+	at corelogic.adapter.dbms.DbmsProcessor.executeSQL(DbmsProcessor.java:532)
+	at ioprocess.C_main_board_select_board.execute(C_main_board_select_board.java:16)
+	at corelogic.adapter.dbms.DbmsInteraction.execute(DbmsInteraction.java:189)
+	... 40 more
+
+18/11/07 18:17:06.818 018 W1 <M> 40 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 78
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 37
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 116
+2 coreframe.db.ConnectionManager (mvc_board) 50
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 23
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 74
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 2054
+18/11/07 18:27:41.287 017 W1 <M> 46 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx)
+2 coreframe.db.ConnectionManager (mvc_board) 87
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 7
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 96
+2 coreframe.db.ConnectionManager (mvc_board) 77
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:getBoardList) 9
+2 corelogic.spi.process.QueryOperator (TR:/main_board/select_board ID:upHit) 1
+1 corelogic.adapter.LocalInteraction (dbms /main_board/select_board) 87
+0 coreview.layout.filter.UIFilter (/coreframe-web-5.0.14/curriculum1.4/controller.jspx) 3329
+18/11/07 18:32:09.684 022 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: java.io.FileNotFoundException: C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\curriculum1.4\filedir\bullet012.png (지정된 파일을 찾을 수 없습니다)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\curriculum1.4\filedir\bullet012.png (지정된 파일을 찾을 수 없습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.apache.jsp.curriculum1_4.controller_jspx.downloadFile(controller_jspx.java:273)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+
+18/11/07 18:32:10.159 018 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+java.io.IOException: java.io.FileNotFoundException: C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\curriculum1.4\filedir\bullet012.png (지정된 파일을 찾을 수 없습니다)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:485)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: C:\Users\CP\Downloads\workspace\coreframe-web-5.0.14\WebContent\curriculum1.4\filedir\bullet012.png (지정된 파일을 찾을 수 없습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.apache.jsp.curriculum1_4.controller_jspx.downloadFile(controller_jspx.java:273)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+
+18/11/07 18:32:26.828 022 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+org.apache.jasper.JasperException: javax.servlet.ServletException: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���7.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:615)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:480)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.servlet.ServletException: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���7.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at coreframe.http.JspxController.doService(JspxController.java:322)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���7.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:227)
+	at coreframe.http.WebController.bindDataset(WebController.java:570)
+	at coreframe.http.WebController.bind(WebController.java:438)
+	at coreframe.http.WebController.bind(WebController.java:425)
+	at coreframe.http.ViewMeta.getInputDataSet(ViewMeta.java:139)
+	at org.apache.jsp.curriculum1_4.controller_jspx.downloadFile(controller_jspx.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	... 30 more
+Caused by: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���7.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at org.owasp.esapi.reference.validation.StringValidationRule.checkWhitelist(StringValidationRule.java:144)
+	at org.owasp.esapi.reference.validation.StringValidationRule.getValid(StringValidationRule.java:306)
+	at org.owasp.esapi.reference.DefaultValidator.getValidInput(DefaultValidator.java:214)
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:218)
+	... 41 more
+
+18/11/07 18:32:40.224 019 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+org.apache.jasper.JasperException: javax.servlet.ServletException: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���7.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:615)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:480)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.servlet.ServletException: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���7.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at coreframe.http.JspxController.doService(JspxController.java:322)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���7.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:227)
+	at coreframe.http.WebController.bindDataset(WebController.java:570)
+	at coreframe.http.WebController.bind(WebController.java:438)
+	at coreframe.http.WebController.bind(WebController.java:425)
+	at coreframe.http.ViewMeta.getInputDataSet(ViewMeta.java:139)
+	at org.apache.jsp.curriculum1_4.controller_jspx.downloadFile(controller_jspx.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	... 30 more
+Caused by: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���7.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at org.owasp.esapi.reference.validation.StringValidationRule.checkWhitelist(StringValidationRule.java:144)
+	at org.owasp.esapi.reference.validation.StringValidationRule.getValid(StringValidationRule.java:306)
+	at org.owasp.esapi.reference.DefaultValidator.getValidInput(DefaultValidator.java:214)
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:218)
+	... 41 more
+
+18/11/07 18:32:57.624 020 W1 <M> URL ERROR
+
+*REQUEST[null] null
+*EXCEPTION
+org.apache.jasper.JasperException: javax.servlet.ServletException: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���6.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:615)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:480)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at coreview.layout.filter.UIFilter.doFilter(UIFilter.java:534)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.servlet.ServletException: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���6.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at coreframe.http.JspxController.doService(JspxController.java:322)
+	at coreframe.http.JspxController.service(JspxController.java:182)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:457)
+	... 28 more
+Caused by: java.lang.RuntimeException: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���6.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:227)
+	at coreframe.http.WebController.bindDataset(WebController.java:570)
+	at coreframe.http.WebController.bind(WebController.java:438)
+	at coreframe.http.WebController.bind(WebController.java:425)
+	at coreframe.http.ViewMeta.getInputDataSet(ViewMeta.java:139)
+	at org.apache.jsp.curriculum1_4.controller_jspx.downloadFile(controller_jspx.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at coreframe.http.JspxController.invokeMethod(JspxController.java:196)
+	at coreframe.http.JspxController.doService(JspxController.java:281)
+	... 30 more
+Caused by: org.owasp.esapi.errors.ValidationException: HTTP parameter [bFile] value: ��蹂닿린_寃���6.png: Invalid input. Please conform to regex ^[가-힣一-龥가-힣a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ,\[\]\.\'\|\-/()（）+:&=_ !$*?~@%]{0,5000}$ with a maximum length of 500000
+	at org.owasp.esapi.reference.validation.StringValidationRule.checkWhitelist(StringValidationRule.java:144)
+	at org.owasp.esapi.reference.validation.StringValidationRule.getValid(StringValidationRule.java:306)
+	at org.owasp.esapi.reference.DefaultValidator.getValidInput(DefaultValidator.java:214)
+	at coreframe.security.impl.CoreframeSecurityRequest.getParameterValues(CoreframeSecurityRequest.java:218)
+	... 41 more
+

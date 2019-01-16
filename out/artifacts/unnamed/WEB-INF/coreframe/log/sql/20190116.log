@@ -1,0 +1,6 @@
+19/01/16 09:41:08.867 034 W1 <Q> TR:/member/insert_member ID:insertMember
+INSERT INTO member(id, pw)
+VALUES(?, ?)
+19/01/16 09:41:09.168 034 W1 <Q> 1:String = u
+19/01/16 09:41:09.168 034 W1 <Q> 2:String = u
+19/01/16 09:41:09.168 034 W1 <Q> TR:/member/insert_member ID:insertMember updateNum:1
